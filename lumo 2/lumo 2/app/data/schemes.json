@@ -1,0 +1,72 @@
+[
+  {
+    "id": "e_shram",
+    "name": "e-Shram",
+    "category": "worker_registration",
+    "catalog_relevance_occupations": ["street_vendor", "farmer", "gig_worker", "migrant_worker", "nano_entrepreneur"],
+    "unknown_information": [
+      "Whether this user's worker category meets current registration conditions",
+      "Required identity, contact details, and documents",
+      "Which services are currently available to this user"
+    ],
+    "official_url": "https://www.eshram.gov.in/",
+    "source_name": "Ministry of Labour and Employment",
+    "official_source_type": "government_portal"
+  },
+  {
+    "id": "pm_sym",
+    "name": "Pradhan Mantri Shram Yogi Maan-Dhan (PM-SYM)",
+    "category": "pension",
+    "catalog_relevance_occupations": ["street_vendor", "gig_worker", "migrant_worker", "nano_entrepreneur"],
+    "unknown_information": [
+      "Current age, income, and worker-category conditions",
+      "Whether existing social-security or pension coverage affects eligibility",
+      "Current contribution requirements and enrolment rules"
+    ],
+    "official_url": "https://maandhan.in/",
+    "source_name": "Government of India scheme portal",
+    "official_source_type": "government_portal"
+  },
+  {
+    "id": "myscheme",
+    "name": "myScheme",
+    "category": "scheme_discovery",
+    "catalog_relevance_occupations": ["street_vendor", "farmer", "gig_worker", "shg_member", "migrant_worker", "nano_entrepreneur"],
+    "unknown_information": [
+      "Eligibility for any individual scheme discovered on the portal",
+      "Current application availability and required documents",
+      "Whether a listed scheme applies in the user's state or district"
+    ],
+    "official_url": "https://www.myscheme.gov.in/",
+    "source_name": "Government of India",
+    "official_source_type": "government_discovery_portal"
+  },
+  {
+    "id": "pmjjby",
+    "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "category": "insurance",
+    "catalog_relevance_occupations": ["street_vendor", "farmer", "gig_worker", "shg_member", "migrant_worker"],
+    "unknown_information": [
+      "Current age, account, and enrolment conditions",
+      "Current premium, coverage, exclusions, and renewal rules",
+      "Consent and renewal requirements"
+    ],
+    "official_url": "https://www.jansuraksha.gov.in/",
+    "source_name": "Government of India",
+    "official_source_type": "government_portal"
+  },
+  {
+    "id": "pmsvanidhi",
+    "name": "PM Street Vendor's AtmaNirbhar Nidhi (PM SVANidhi)",
+    "category": "street_vendor_credit",
+    "catalog_relevance_occupations": ["street_vendor"],
+    "unknown_information": [
+      "Current vendor identification and eligibility conditions",
+      "Current lending terms, repayment conditions, and benefits",
+      "Application availability and local verification process"
+    ],
+    "official_url": "https://pmsvanidhi.mohua.gov.in/",
+    "source_name": "Ministry of Housing and Urban Affairs",
+    "official_source_type": "government_portal"
+  }
+]

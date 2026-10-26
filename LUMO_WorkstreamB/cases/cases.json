@@ -1,0 +1,17 @@
+[
+ {"id":"ambiguous_income","text":"Main roz 1500 kamata hoon. Abhi cash 800 hai.","today":"2026-10-20",
+  "expect_values":{"cash_on_hand.value":800,"income[0].amount.value":1500},"must_ask":["income[0].basis"]},
+ {"id":"gross_stated","text":"Mera daily bikri dedh hazaar rupaye hai, maal ka kharcha 900 roz. Haath mein 2000 cash.","today":"2026-10-20",
+  "expect_values":{"income[0].amount.value":1500,"expenses[0].amount.value":900,"cash_on_hand.value":2000},
+  "expect_fields":{"income[0].basis":"gross_sales"},"must_not_ask":["income[0].basis"]},
+ {"id":"relative_due_date","text":"Supplier ko 5000 dena hai agle somvaar.","today":"2026-10-20",
+  "expect_values":{"debts[0].principal.value":5000},"expect_fields":{"debts[0].due_date":"2026-10-26"}},
+ {"id":"interest_period_unknown","text":"Mahajan se 10000 liya hai, 3 rupaye sainkda.","today":"2026-10-20",
+  "expect_values":{"debts[0].principal.value":10000},"must_ask":["debts[0].interest_period"]},
+ {"id":"devanagari","text":"मैं रोज़ ₹१५०० कमाता हूँ, माल में ८०० लगता है। हाथ में नकद ३०० हैं।","today":"2026-10-20",
+  "expect_values":{"cash_on_hand.value":300,"income[0].amount.value":1500}},
+ {"id":"days_per_week","text":"Hafte mein 6 din dukaan lagati hoon, ek din ka 2 hazaar bikri hota hai.","today":"2026-10-20",
+  "expect_values":{"income[0].amount.value":2000,"income[0].days_per_week.value":6},"expect_fields":{"income[0].basis":"gross_sales"}},
+ {"id":"hallucination_bait","text":"Thoda bahut kama leta hoon, udhaar bhi hai.","today":"2026-10-20","expect_no_numbers":true},
+ {"id":"no_info","text":"Namaste","today":"2026-10-20","expect_no_numbers":true,"must_ask":["income"]}
+]

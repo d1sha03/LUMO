@@ -1,0 +1,37 @@
+{
+  "eshram_faqs.html": {
+    "fetch_urls": [
+      "https://eshram.gov.in/faqs",
+      "https://www.eshram.gov.in/faqs",
+      "https://beta.eshram.gov.in/faqs",
+      "https://upbeta.eshram.gov.in/faqs"
+    ],
+    "source_url": "https://eshram.gov.in/faqs",
+    "source_name": "e-Shram portal, Ministry of Labour and Employment",
+    "title": "e-Shram FAQs"
+  },
+  "eshram_objectives.html": {
+    "fetch_url": "https://eshram.gov.in/e-shram-objectives",
+    "source_url": "https://eshram.gov.in/e-shram-objectives",
+    "source_name": "e-Shram portal, Ministry of Labour and Employment",
+    "title": "e-Shram objectives"
+  },
+  "eshram_portal_pib_factsheet.pdf": {
+    "fetch_url": "https://static.pib.gov.in/WriteReadData/userfiles/file/e-ShramPortal3NCD.pdf",
+    "source_url": "https://static.pib.gov.in/WriteReadData/userfiles/file/e-ShramPortal3NCD.pdf",
+    "source_name": "Press Information Bureau, Government of India",
+    "title": "e-Shram portal fact sheet (PIB)"
+  },
+  "pib_eshram_release.html": {
+    "fetch_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1749294",
+    "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1749294",
+    "source_name": "Press Information Bureau, Government of India",
+    "title": "PIB press release on e-Shram"
+  },
+  "pm_sym_labour.html": {
+    "fetch_url": "https://labour.gov.in/pmsym",
+    "source_url": "https://labour.gov.in/pmsym",
+    "source_name": "Ministry of Labour and Employment",
+    "title": "PM-SYM pension scheme"
+  }
+}

@@ -1,0 +1,77 @@
+PASS | intake typed hi-IN                   | HTTP 200 mode=live provider=sarvam:sarvam-105b flows=4 cash=5000 reserve=3000 goals=0 questions=1 asked=['cash_flows.business_sales']
+PASS | clarification answer hi-IN           | HTTP 200 mode=live provider=sarvam:sarvam-105b flows=4 cash=5000 reserve=3000 goals=0 questions=0 still_asked=[]
+PASS | simulate hi-IN                       | scenarios=2 labels=['Current plan', 'Income falls 40 percent for 10 days'] min_balance=[1100, -1900] shortfall=[1900, 4900]
+PASS | recommendation hi-IN                 | source=sarvam_llm llm_error='None' actions=n/a text='नमस्ते। यह जानकारी और गणनाएँ LUMO के वित्तीय इंजन से आई हैं, मैंने नहीं बनाई।\n\nLUMO estimates के अनुसार, आपकी स्थिति फिल'
+PASS | intake typed en-IN                   | HTTP 200 mode=live provider=sarvam:sarvam-105b flows=4 cash=42000 reserve=15000 goals=0 questions=0 asked=[]
+PASS | simulate en-IN                       | scenarios=2 labels=['Current plan', 'Income falls 40 percent for 10 days'] min_balance=[44500, 26300] shortfall=[0, 0]
+PASS | recommendation en-IN                 | source=sarvam_llm llm_error='None' actions=n/a text='It appears your income fluctuates, and working with irregular earnings is challenging—you are doing your best. Your busi'
+PASS | intake typed pa-IN                   | HTTP 200 mode=live provider=sarvam:sarvam-105b flows=3 cash=9000 reserve=3000 goals=0 questions=0 asked=[]
+PASS | simulate pa-IN                       | scenarios=2 labels=['Current plan', 'Income falls 40 percent for 10 days'] min_balance=[6500, 3140] shortfall=[0, 0]
+PASS | recommendation pa-IN                 | source=sarvam_llm llm_error='None' actions=n/a text='ਇਹ ਨੰਬਰ LUMO ਦੇ ਵਿੱਤੀ ਇੰਜਣ ਵੱਲੋਂ ਕੱਢੇ ਗਏ ਹਨ, ਮੇਰੇ ਵੱਲੋਂ ਨਹੀਂ। ਤੁਹਾਡੀ ਅੰਦਾਜ਼ਨ ਮਹੀਨਾਵਾਰ ਕਮਾਈ ₹31,200 ਹੈ ਅਤੇ ਮਹੀਨੇ ਦੇ ਅੰਤ ਵ'
+FAIL | intake typed hi-IN-mixed             | HTTP 200 mode=demo provider=fallback flows=1 cash=9500 reserve=4000 goals=0 questions=2 asked=['cash_flows.household_essential.start_date', 'cash_flows.business_stock_cost']
+PASS | clarification answer hi-IN-mixed     | HTTP 200 mode=live provider=sarvam:sarvam-105b flows=2 cash=9500 reserve=4000 goals=0 questions=1 still_asked=['cash_flows.business_stock_cost']
+PASS | simulate hi-IN-mixed                 | scenarios=2 labels=['Current plan', 'Income falls 40 percent for 10 days'] min_balance=[12700, 11420] shortfall=[0, 0]
+PASS | recommendation hi-IN-mixed           | source=sarvam_llm llm_error='None' actions=n/a text='नमस्ते, यहाँ आपके वित्तीय सारांश के बारे में जानकारी है।\n\nलूमू के वित्तीय इंजन के अनुसार, आपकी अनुमानित मासिक आय ₹83,200'
+PASS | STT saaras:v4 hi-IN                  | HTTP 200 model=saaras:v4 detected=hi-IN transcript='नमस्ते। मेरी रोज की कमाई आठ सौ रुपये है और माल पर पांच सौ रुपये लगते हैं।'
+PASS | STT saaras:v4 pa-IN                  | HTTP 200 model=saaras:v4 detected=pa-IN transcript='ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ, ਮੈਂ ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਚਾਹ ਦੀ ਦੁਕਾਨ ਚਲਾਉਂਦਾ।'
+PASS | STT saaras:v4 en-IN                  | HTTP 200 model=saaras:v4 detected=en-IN transcript='Hello, my daily income is 800 rupees and stock costs 500.'
+PASS | STT auto-detect (language unknown)   | HTTP 200 detected=hi-IN text='नमस्ते। मेरी रोज की कमाई आठ सौ रुपये है। और माल पर पांच सौ रुपये लगते '
+PASS | VOICE -> STT -> LLM -> Twin          | HTTP 200 mode=live provider=sarvam:sarvam-105b flows=2 cash=5000 reserve=None goals=0 questions=3 flows=['business_sales', 'household_essential']
+FAIL | VOICE -> ... -> simulation           | HTTP 422 {"error":"validation_error","message":"The simulation cannot run until the listed inputs are provided or corrected.","issues":[{"field":"profile.minimum_reserve
+PASS | STT failure stays an error (no fake transcript) | HTTP 503 status=provider_error transcript=None
+PASS | TTS bulbul:v4-flash hi-IN            | bytes=292868 rip=b'RIFF' provider=sarvam_tts
+PASS | TTS bulbul:v4-flash en-IN            | bytes=197612 rip=b'RIFF' provider=sarvam_tts
+PASS | TTS bulbul:v4-flash pa-IN            | bytes=194084 rip=b'RIFF' provider=sarvam_tts
+PASS | persona Small Farmer live            | flows=3 cash=18000 cats=['business_stock_cost', 'household_essential', 'debt_repayment'] min_balance=[-9500, -9500] expl_source=sarvam_llm len=898
+PASS | persona Kiryana Shop Owner live      | flows=4 cash=42000 cats=['business_sales', 'business_stock_cost', 'household_essential', 'debt_repayment'] min_balance=[44500, 26300] expl_source=sarvam_llm len=833
+PASS | persona Street Food Vendor live      | flows=5 cash=9500 cats=['business_sales', 'business_stock_cost', 'business_operating_cost', 'household_essential', 'other'] min_balance=[9860, -2940] expl_source=sarvam_llm len=1016
+PASS | personas produce DIFFERENT twins+simulations | fingerprints={'Small Farmer': (18000, 3, (-9500, -9500)), 'Kiryana Shop Owner': (42000, 4, (44500, 26300)), 'Street Food Vendor': (9500, 5, (9860, -2940))}
+PASS | personas produce DIFFERENT recommendations | distinct=3 of 3
+PASS | BHASHINI translate (real or honest error) | HTTP 200 provider=offline_fallback status=unavailable translated=False msg=Translation is unavailable; the original text is shown.
+FAIL | BHASHINI live inference              | provider=offline_fallback status=unavailable (see _bhashini_probe.py for the HTTP evidence)
+
+===== providers/health =====
+{
+ "sarvam_stt": {
+  "configured": true,
+  "reachable": false,
+  "status": "error",
+  "error": "Sarvam STT returned HTTP 400.",
+  "model": "saaras:v4"
+ },
+ "sarvam_llm": {
+  "configured": true,
+  "reachable": true,
+  "status": "reachable",
+  "error": null,
+  "model": "sarvam-105b"
+ },
+ "sarvam_tts": {
+  "configured": true,
+  "reachable": true,
+  "status": "reachable",
+  "error": null,
+  "model": "bulbul:v4-flash"
+ },
+ "bhashini": {
+  "configured": true,
+  "reachable": null,
+  "status": "configured",
+  "error": null,
+  "model": "64392f96daac500b55c543cd"
+ },
+ "summary": {
+  "reachable_providers": [
+   "sarvam_llm",
+   "sarvam_tts"
+  ],
+  "reachable_count": 2,
+  "total_providers": 4
+ }
+}
+
+===== SUMMARY =====
+PASS 28  FAIL 3
+  FAILED: intake typed hi-IN-mixed -> HTTP 200 mode=demo provider=fallback flows=1 cash=9500 reserve=4000 goals=0 questions=2 asked=['cash_flows.household_essential.start_date', 'cash_flows.business_stock_cost']
+  FAILED: VOICE -> ... -> simulation -> HTTP 422 {"error":"validation_error","message":"The simulation cannot run until the listed inputs are provided or corrected.","issues":[{"field":"profile.minimum_reserve
+  FAILED: BHASHINI live inference -> provider=offline_fallback status=unavailable (see _bhashini_probe.py for the HTTP evidence)

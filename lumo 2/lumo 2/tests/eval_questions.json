@@ -1,0 +1,9 @@
+[
+  {"q": "Who can register on e-Shram?", "expect_any": ["unorganised", "unorganized", "worker"]},
+  {"q": "e-Shram registration ke liye kaun se documents chahiye?", "expect_any": ["aadhaar", "bank", "mobile"]},
+  {"q": "ई-श्रम कार्ड के लाभ क्या हैं?", "expect_any": ["benefit", "insurance", "accident"]},
+  {"q": "eshram card kaise download kare", "expect_any": ["download", "uan", "card"]},
+  {"q": "Is registration free?", "expect_any": ["free", "charge", "fee"]},
+  {"q": "PM-SYM pension kaun le sakta hai?", "expect_any": ["pension", "pm-sym", "sym"]},
+  {"q": "What is the capital of France?", "expect_none": true}
+]

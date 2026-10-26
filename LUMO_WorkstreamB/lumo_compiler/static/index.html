@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LUMO Livelihood Compiler</title>
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--mut:#666;--card:#f6f6f4;--bd:#ddd;--ac:#0b6b4f;--warn:#b45309}
+@media (prefers-color-scheme:dark){:root{--bg:#141414;--fg:#eee;--mut:#9a9a9a;--card:#1f1f1f;--bd:#333;--ac:#4cc29b;--warn:#f0a35a}}
+body{font-family:system-ui,'Noto Sans Devanagari',sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:20px;max-width:900px;margin-inline:auto}
+h1{font-size:1.3rem;margin:0 0 4px}.sub{color:var(--mut);margin:0 0 16px;font-size:.9rem}
+textarea,input{width:100%;box-sizing:border-box;padding:10px;font:inherit;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--fg)}
+textarea{min-height:90px}
+button{font:inherit;padding:8px 14px;border-radius:8px;border:1px solid var(--ac);background:var(--ac);color:#fff;cursor:pointer;margin:6px 6px 0 0}
+button.ghost{background:transparent;color:var(--ac)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:12px 14px;margin:14px 0}
+.card h2{font-size:1rem;margin:0 0 8px}
+table{width:100%;border-collapse:collapse;font-size:.85rem}td,th{text-align:left;padding:5px 6px;border-bottom:1px solid var(--bd);vertical-align:top}
+.tag{font-size:.75rem;padding:1px 7px;border-radius:10px;border:1px solid var(--bd)}
+.stated{color:var(--ac)}.ambiguous,.inferred{color:var(--warn)}.missing{color:var(--mut)}
+.warn{color:var(--warn);font-size:.85rem}.q{margin:10px 0;padding-bottom:10px;border-bottom:1px dashed var(--bd)}
+.why{color:var(--mut);font-size:.8rem}.row{display:flex;gap:8px;align-items:center}
+.err{color:#c0392b}details pre{overflow:auto;font-size:.75rem}
+</style></head><body>
+<h1>LUMO Livelihood Compiler</h1>
+<p class="sub">Type or paste a vendor's story in Hindi / Hinglish / English. Workstream B demo.</p>
+<textarea id="text" placeholder="e.g. Main roz 1500 kamata hoon. Abhi cash 800 hai. Supplier ko 5000 dena hai agle somvaar."></textarea>
+<div>
+<button id="go">Extract</button>
+<button class="ghost" onclick="ex(0)">Example 1</button><button class="ghost" onclick="ex(1)">Example 2</button><button class="ghost" onclick="ex(2)">Example 3</button>
+<label style="margin-left:8px;font-size:.85rem">Question language
+<select id="lang"><option value="hi">हिन्दी</option><option value="en">English</option></select></label>
+</div>
+<div id="err" class="err"></div>
+<div id="out"></div>
+<script>
+const EXS=["Main roz 1500 kamata hoon. Abhi cash 800 hai.",
+"Mera daily bikri dedh hazaar rupaye hai, maal ka kharcha 900 roz. Haath mein 2000 cash. Supplier ko 5000 dena hai agle somvaar.",
+"मैं रोज़ ₹१५०० कमाता हूँ, माल में ८०० लगता है। महाजन से 10000 लिया है, 3 रुपये सैकड़ा।"];
+let state=null, fullText="";
+const $=id=>document.getElementById(id);
+function ex(i){$("text").value=EXS[i]}
+async function post(url,body){
+  $("err").textContent="";
+  const r=await fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+  const j=await r.json();
+  if(!r.ok) throw new Error(j.detail||r.statusText);
+  return j;
+}
+async function extract(text){
+  try{ $("go").disabled=true; $("go").textContent="Working...";
+    fullText=text; state=await post("/extract",{text}); render();
+  }catch(e){$("err").textContent="Error: "+e.message}
+  finally{$("go").disabled=false;$("go").textContent="Extract"}
+}
+$("go").onclick=()=>{const t=$("text").value.trim(); if(t) extract(t)};
+$("lang").onchange=()=>state&&render();
+function facts(n,p,out){
+  if(n&&typeof n==="object"&&!Array.isArray(n)){
+    if("value" in n&&"status" in n&&"source_span" in n){out.push([p,n]);return}
+    for(const k in n) facts(n[k],p?p+"."+k:k,out);
+  } else if(Array.isArray(n)) n.forEach((v,i)=>facts(v,p+"["+i+"]",out));
+  return out;
+}
+function plain(n,p,out){ // non-fact scalar fields (basis, period, due_date...)
+  if(Array.isArray(n)) n.forEach((v,i)=>plain(v,p+"["+i+"]",out));
+  else if(n&&typeof n==="object"){ if("value" in n&&"status" in n&&"source_span" in n) return;
+    for(const k in n) plain(n[k],p?p+"."+k:k,out);}
+  else if(n!==null&&n!==undefined) out.push([p,n]);
+  return out;
+}
+const esc=s=>String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+function render(){
+  const e=state.extraction, L=$("lang").value;
+  const fr=facts(e,"",[]).filter(([p,f])=>f.value!==null);
+  const pl=plain(e,"",[]);
+  let h='<div class="card"><h2>Questions to clarify'+(state.pending_questions_count?` (+${state.pending_questions_count} more later)`:"")+'</h2>';
+  if(!state.questions.length) h+='<div class="why">No open questions. This state is ready for the stress radar.</div>';
+  state.questions.forEach((q,i)=>{
+    h+=`<div class="q"><b>${esc(L==="hi"?q.question_hi:q.question_en)}</b><div class="why">${esc(q.why_it_matters)}</div>`;
+    if(q.answer_type==="choice") q.options.forEach((o,j)=>h+=`<button onclick="ans(${i},${j})">${esc(L==="hi"?o.label_hi:o.label_en)}</button>`);
+    else h+=`<div class="row" style="margin-top:6px"><input id="a${i}" placeholder="${q.answer_type==='date'?'e.g. somvaar / 5 din mein / 25/10':'type your answer'}"><button onclick="ansText(${i})">Submit</button></div>`;
+    h+='</div>';
+  });
+  h+='</div><div class="card"><h2>Extracted facts</h2><table><tr><th>Field</th><th>Value</th><th>Status</th><th>Conf.</th><th>User\'s words</th></tr>';
+  fr.forEach(([p,f])=>h+=`<tr><td>${esc(p)}</td><td>₹${f.value}</td><td><span class="tag ${f.status}">${f.status}</span></td><td>${f.confidence}</td><td>${esc(f.source_span||"")}</td></tr>`);
+  pl.forEach(([p,v])=>{ if(!/due_date_text|target_date_text/.test(p)) h+=`<tr><td>${esc(p)}</td><td>${esc(v)}</td><td colspan="3"></td></tr>`});
+  if(!fr.length&&!pl.length) h+='<tr><td colspan="5" class="why">Nothing extracted yet.</td></tr>';
+  h+='</table></div>';
+  if(state.warnings.length){h+='<div class="card"><h2>Warnings</h2>'+state.warnings.map(w=>`<div class="warn">${esc(w.code)} at ${esc(w.path)}: ${esc(w.detail)}</div>`).join("")+'</div>'}
+  h+=`<details class="card"><summary>Raw JSON (the contract for Workstream C)</summary><pre>${esc(JSON.stringify(state,null,2))}</pre></details>`;
+  $("out").innerHTML=h;
+}
+async function send(q,value){
+  try{
+    if(q.answer_type==="narrative"){ const t=fullText+" "+value; $("text").value=t; await extract(t); return }
+    state=await post("/answer",{state,field_path:q.field_path,value}); render();
+  }catch(e){$("err").textContent="Error: "+e.message}
+}
+function ans(i,j){const q=state.questions[i]; send(q,q.options[j].value)}
+function ansText(i){const v=$("a"+i).value.trim(); if(v) send(state.questions[i],v)}
+</script></body></html>

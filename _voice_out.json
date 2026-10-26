@@ -1,0 +1,42 @@
+[
+ {
+  "step": "stt of provider audio",
+  "ok": true,
+  "detail": "detected=hi-IN text='नमस्ते। मेरी रोज की कमाई आठ सौ रुपये है। और माल पर पांच सौ रुपये लगते हैं।'"
+ },
+ {
+  "step": "voice -> twin",
+  "ok": true,
+  "detail": "HTTP 200 mode=live provider=sarvam:sarvam-105b flows=3 cash=5000 reserve=3000 questions=0 asked=[] cats=['business_sales', 'business_stock_cost', 'household_essential']"
+ },
+ {
+  "step": "voice -> simulation",
+  "ok": true,
+  "detail": "min_balance=[1100, -1200] shortfall=[1900, 4200]"
+ },
+ {
+  "step": "voice -> recommendation",
+  "ok": true,
+  "detail": "source=sarvam_llm len=814 text='आपके स्ट्रीट वेंडर व्यवसाय की वित्तीय स्थिति स्थिर प्रतीत होती है। LUMO के इंजन के अनुसार,'"
+ },
+ {
+  "step": "voice -> TTS reply audio",
+  "ok": true,
+  "detail": "HTTP 200 bytes=889100 provider=sarvam_tts"
+ },
+ {
+  "step": "code-mixed attempt 1",
+  "ok": true,
+  "detail": "HTTP 200 mode=live provider=sarvam:sarvam-105b flows=3 cash=9500 reserve=4000 questions=0 warnings=[]"
+ },
+ {
+  "step": "code-mixed attempt 2",
+  "ok": true,
+  "detail": "HTTP 200 mode=live provider=sarvam:sarvam-105b flows=3 cash=9500 reserve=4000 questions=0 warnings=[\"'reserve' has no stated deadline and was not added to the dated Twin goal list.\"]"
+ },
+ {
+  "step": "code-mixed attempt 3",
+  "ok": true,
+  "detail": "HTTP 200 mode=live provider=sarvam:sarvam-105b flows=3 cash=9500 reserve=4000 questions=0 warnings=[]"
+ }
+]

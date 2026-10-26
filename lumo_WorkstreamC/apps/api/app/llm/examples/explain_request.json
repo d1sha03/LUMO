@@ -1,0 +1,12 @@
+{
+  "term_key": "projected_cash_shortfall",
+  "language": "hi-IN",
+  "include_audio": true,
+  "context": {
+    "scenario_status": "reserve_breach",
+    "shortfall_to_reserve": 1200,
+    "minimum_balance": 300,
+    "minimum_balance_date": "2026-11-01",
+    "minimum_reserve": 1500
+  }
+}

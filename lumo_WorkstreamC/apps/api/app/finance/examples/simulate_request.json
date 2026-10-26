@@ -1,0 +1,88 @@
+{
+  "twin": {
+    "schema_version": "1.0",
+    "twin_id": "demo_vendor_001",
+    "as_of_date": "2026-10-19",
+    "language": "hi-IN",
+    "profile": {
+      "occupation": "vegetable vendor",
+      "state": "Uttar Pradesh",
+      "district": "Ghaziabad",
+      "cash_on_hand": 4000,
+      "minimum_reserve": 1500,
+      "forecast_days": 21
+    },
+    "cash_flows": [
+      {
+        "id": "cf_sales",
+        "label": "Daily vegetable sales",
+        "direction": "inflow",
+        "category": "business_sales",
+        "amount": 1500,
+        "frequency": "daily",
+        "start_date": "2026-10-19",
+        "confidence": 0.9,
+        "source_type": "synthetic_dataset",
+        "source_note": "synthetic: sells about 1500 rupees of vegetables per day",
+        "essential": false
+      },
+      {
+        "id": "cf_stock",
+        "label": "Daily stock purchase",
+        "direction": "outflow",
+        "category": "business_stock_cost",
+        "amount": 900,
+        "frequency": "daily",
+        "start_date": "2026-10-19",
+        "confidence": 0.85,
+        "source_type": "synthetic_dataset",
+        "source_note": "synthetic: buys about 900 rupees of stock per day",
+        "essential": true
+      },
+      {
+        "id": "cf_home",
+        "label": "Household food and expenses",
+        "direction": "outflow",
+        "category": "household_essential",
+        "amount": 300,
+        "frequency": "daily",
+        "start_date": "2026-10-19",
+        "confidence": 0.8,
+        "source_type": "synthetic_dataset",
+        "source_note": null,
+        "essential": true
+      },
+      {
+        "id": "cf_loan",
+        "label": "Weekly loan repayment",
+        "direction": "outflow",
+        "category": "debt_repayment",
+        "amount": 800,
+        "frequency": "weekly",
+        "start_date": "2026-10-22",
+        "confidence": 0.95,
+        "source_type": "synthetic_dataset",
+        "source_note": "synthetic: pays 800 every Thursday",
+        "essential": true
+      }
+    ],
+    "goals": []
+  },
+  "scenarios": [
+    {
+      "scenario_id": "baseline",
+      "label": "Expected situation",
+      "income_shock": null
+    },
+    {
+      "scenario_id": "sales_drop_30",
+      "label": "Sales fall by 30% for 14 days",
+      "income_shock": {
+        "category": "business_sales",
+        "multiplier": 0.7,
+        "duration_days": 14,
+        "start_date": "2026-10-19"
+      }
+    }
+  ]
+}

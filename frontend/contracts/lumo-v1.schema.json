@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lumo:contracts:lumo-v1.schema.json",
+  "title": "FinancialTwin",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "twin_id",
+    "as_of_date",
+    "language",
+    "profile",
+    "cash_on_hand",
+    "minimum_reserve",
+    "forecast_days",
+    "cash_flows",
+    "goals"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "twin_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "as_of_date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "language": {
+      "type": "string",
+      "enum": ["hi-IN", "en-IN", "pa-IN"]
+    },
+    "profile": {
+      "type": "object",
+      "required": ["occupation"],
+      "properties": {
+        "occupation": { "type": "string", "minLength": 1 },
+        "state": { "type": "string" },
+        "district": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "cash_on_hand": {
+      "type": ["number", "null"],
+      "minimum": 0
+    },
+    "minimum_reserve": {
+      "type": ["number", "null"],
+      "minimum": 0
+    },
+    "forecast_days": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 90
+    },
+    "cash_flows": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/CashFlow"
+      }
+    },
+    "goals": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Goal"
+      }
+    }
+  },
+  "$defs": {
+    "CashFlow": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "direction",
+        "category",
+        "amount",
+        "frequency",
+        "start_date",
+        "confidence",
+        "source_type",
+        "essential"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "direction": { "type": "string", "enum": ["inflow", "outflow"] },
+        "category": {
+          "type": "string",
+          "enum": [
+            "business_sales",
+            "business_stock_cost",
+            "business_operating_cost",
+            "household_essential",
+            "household_discretionary",
+            "debt_repayment",
+            "supplier_payment",
+            "savings_goal",
+            "other"
+          ]
+        },
+        "amount": { "type": "number", "minimum": 0 },
+        "frequency": {
+          "type": "string",
+          "enum": ["once", "daily", "weekly", "monthly"]
+        },
+        "start_date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "user_statement",
+            "manual_entry",
+            "synthetic_dataset",
+            "official_source"
+          ]
+        },
+        "source_note": { "type": "string" },
+        "essential": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "Goal": {
+      "type": "object",
+      "required": ["id", "label", "target_amount", "target_date", "priority"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "target_amount": { "type": "number", "minimum": 0 },
+        "target_date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["essential", "important", "optional"]
+        },
+        "current_saved": { "type": "number", "minimum": 0 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

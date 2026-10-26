@@ -1,0 +1,20 @@
+{
+  "scenarios": [
+    {
+      "id": "sita_lucknow_complete",
+      "title": "Sita, 34 — vegetable vendor, Lucknow (complete fictional demo)",
+      "description": "The coherent LUMO demo persona. See sita-lucknow-twin.json for the shared FinancialTwin fixture. The ₹1,800 instalment and ₹1,200 inventory payment are fictional illustrative cash-flow assumptions, visibly labelled for confirmation.",
+      "story_hi": "मैं एक सब्ज़ी बेचने का काम करती हूं। मेरी कमाई रोज़ अलग होती है। बारिश में बहुत कम हो जाती है। अगले महीने बेटी की फीस है। और मैंने पिछले महीने ₹10,000 उधार लिया था।",
+      "story_en": "I sell vegetables in Lucknow. My income changes from day to day and drops during rain. My daughter's school fee is due next month. I borrowed ₹10,000 last month, but I still need to confirm the lender schedule.",
+      "twin_fixture": "sita-lucknow-twin.json",
+      "mode": "synthetic_dataset"
+    },
+    {
+      "id": "sita_story_only",
+      "title": "Sita — story before financial amounts are confirmed",
+      "description": "Use this narrative to demonstrate missing-value preservation and clarification. Cash on hand, reserve, sales and costs must remain unknown until Sita confirms them.",
+      "story_hi": "मैं एक सब्ज़ी बेचने का काम करती हूं। मेरी कमाई रोज़ अलग होती है। बारिश में बहुत कम हो जाती है। अगले महीने बेटी की फीस है। और मैंने पिछले महीने ₹10,000 उधार लिया था।",
+      "mode": "user_statement_only"
+    }
+  ]
+}

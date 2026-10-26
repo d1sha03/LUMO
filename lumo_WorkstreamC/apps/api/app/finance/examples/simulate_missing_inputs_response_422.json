@@ -1,0 +1,16 @@
+{
+  "error": "validation_error",
+  "message": "The simulation cannot run until the listed inputs are provided or corrected.",
+  "issues": [
+    {
+      "field": "profile.cash_on_hand",
+      "code": "missing_required_input",
+      "message": "Cash on hand is unknown. Ask the user how much cash they currently have; it is not assumed to be zero."
+    },
+    {
+      "field": "profile.minimum_reserve",
+      "code": "missing_required_input",
+      "message": "Minimum reserve is unknown. Ask the user how much cash they want to keep in hand; it is not assumed to be zero."
+    }
+  ]
+}

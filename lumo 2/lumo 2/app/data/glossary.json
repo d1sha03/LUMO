@@ -1,0 +1,361 @@
+[
+  {
+    "id": "emergency_fund",
+    "term": "Emergency fund",
+    "category": "savings",
+    "aliases": ["emergency fund", "emergency savings", "आपातकालीन निधि", "आपातकालीन फंड", "emergency fund kya", "emergency fund kya hota", "emergency fund kya hai"],
+    "definition": "Money set aside for unexpected essential expenses.",
+    "simple_explanation": "An emergency fund is money you keep aside for an unexpected essential expense, such as an urgent repair.",
+    "hindi_explanation": "आपातकालीन निधि वह पैसा है जिसे आप अचानक आने वाले ज़रूरी खर्चों के लिए बचाकर रखते हैं।",
+    "hinglish_explanation": "Emergency fund woh paise hain jo aap achanak zaroori kharchon ke liye bachakar rakhte hain.",
+    "punjabi_explanation": "ਐਮਰਜੈਂਸੀ ਫੰਡ ਉਹ ਪੈਸਾ ਹੈ ਜੋ ਤੁਸੀਂ ਅਚਾਨਕ ਆਉਣ ਵਾਲੇ ਜ਼ਰੂਰੀ ਖਰਚਿਆਂ ਲਈ ਵੱਖਰਾ ਰੱਖਦੇ ਹੋ।",
+    "examples": {
+      "street_vendor": "Money kept aside if your cart needs an urgent repair.",
+      "farmer": "Money kept aside for an unexpected essential farm expense.",
+      "gig_worker": "Money kept aside if your vehicle needs an urgent repair."
+    }
+  },
+  {
+    "id": "interest_rate",
+    "term": "Interest rate",
+    "category": "credit",
+    "aliases": ["interest rate", "interest", "byaaj dar", "byaj dar", "ब्याज दर", "ब्याज", "loan ka interest", "loan par byaaj"],
+    "definition": "The rate charged for borrowing money or paid on certain savings over a stated period.",
+    "simple_explanation": "An interest rate tells you how much interest you pay on a loan or earn on certain savings over a stated period.",
+    "hindi_explanation": "ब्याज दर बताती है कि तय अवधि में ऋण पर कितना ब्याज देना होगा या कुछ बचत पर कितना ब्याज मिलेगा।",
+    "hinglish_explanation": "Interest rate batata hai ki loan par ek tay samay mein kitna byaaj dena hoga, ya kuch savings par kitna byaaj milega.",
+    "examples": {
+      "street_vendor": "Compare the interest rate before borrowing money to buy stock.",
+      "farmer": "Check the interest rate before taking a farm loan.",
+      "gig_worker": "Check the interest rate before taking a vehicle loan."
+    }
+  },
+  {
+    "id": "savings",
+    "term": "Savings",
+    "category": "savings",
+    "aliases": ["savings", "save money", "बचत", "paise bachana", "paisa bachana", "bachat"],
+    "definition": "Money not spent now and kept for future needs or goals.",
+    "simple_explanation": "Savings are money you keep for future needs after paying essential expenses.",
+    "hindi_explanation": "बचत वह पैसा है जिसे ज़रूरी खर्चों के बाद भविष्य की ज़रूरतों के लिए अलग रखा जाता है।",
+    "hinglish_explanation": "Savings woh paise hain jo zaroori kharchon ke baad future ki zarooraton ke liye alag rakhe jaate hain.",
+    "examples": {
+      "street_vendor": "Setting aside a small amount from sales for stock or repairs.",
+      "farmer": "Keeping some income for seeds or other planned expenses.",
+      "gig_worker": "Setting aside part of weekly earnings for future expenses."
+    }
+  },
+  {
+    "id": "income",
+    "term": "Income",
+    "category": "income",
+    "aliases": ["income", "kamai", "कमाई", "आय", "aamdani", "आमदनी"],
+    "definition": "Money received from work, business, or other sources.",
+    "simple_explanation": "Income is the money you receive from your work or business. It may change from day to day or month to month.",
+    "hindi_explanation": "आय वह पैसा है जो आपको काम या व्यवसाय से मिलता है। यह हर दिन या हर महीने बदल सकता है।",
+    "hinglish_explanation": "Income woh paise hain jo aapko kaam ya business se milte hain. Yeh har din ya mahine badal sakte hain.",
+    "punjabi_explanation": "ਆਮਦਨ ਉਹ ਪੈਸਾ ਹੈ ਜੋ ਤੁਹਾਨੂੰ ਕੰਮ ਜਾਂ ਕਾਰੋਬਾਰ ਤੋਂ ਮਿਲਦਾ ਹੈ। ਇਹ ਹਰ ਦਿਨ ਜਾਂ ਮਹੀਨੇ ਬਦਲ ਸਕਦਾ ਹੈ।",
+    "examples": {
+      "street_vendor": "Money received from selling goods, before subtracting business costs.",
+      "farmer": "Money received from selling crops, before subtracting costs.",
+      "gig_worker": "Money received from completed gigs before expenses."
+    }
+  },
+  {
+    "id": "expenses",
+    "term": "Expenses",
+    "category": "budgeting",
+    "aliases": ["expenses", "kharcha", "kharch", "खर्च", "व्यय"],
+    "definition": "Money spent on household, personal, or business needs.",
+    "simple_explanation": "Expenses are the things you spend money on, such as food, transport, supplies, rent, or repairs.",
+    "hindi_explanation": "खर्च वह पैसा है जो आप भोजन, यात्रा, सामान, किराए या मरम्मत जैसी ज़रूरतों पर लगाते हैं।",
+    "hinglish_explanation": "Expenses woh paise hain jo aap food, travel, samaan, rent ya repair jaise kaamon par kharch karte hain.",
+    "examples": {}
+  },
+  {
+    "id": "cash_flow",
+    "term": "Cash flow",
+    "category": "budgeting",
+    "aliases": ["cash flow", "cashflow", "पैसों का प्रवाह", "paise ka flow"],
+    "definition": "The movement of money coming in and going out over a period.",
+    "simple_explanation": "Cash flow means the money coming in and the money going out during a period. It helps you see whether you have enough money available when bills are due.",
+    "hindi_explanation": "कैश फ्लो का मतलब है किसी अवधि में आने वाला और खर्च होने वाला पैसा। इससे पता चलता है कि ज़रूरी भुगतान के समय आपके पास पर्याप्त पैसा है या नहीं।",
+    "hinglish_explanation": "Cash flow ka matlab hai ek time period mein kitna paisa aa raha hai aur kitna ja raha hai.",
+    "examples": {}
+  },
+  {
+    "id": "loan_principal",
+    "term": "Loan principal",
+    "category": "credit",
+    "aliases": ["loan principal", "principal amount", "मूलधन", "asal rakam"],
+    "definition": "The original amount borrowed, excluding interest and fees.",
+    "simple_explanation": "Loan principal is the original amount you borrow, before adding interest and applicable fees.",
+    "hindi_explanation": "ऋण का मूलधन वह मूल राशि है जो आपने उधार ली है। इसमें ब्याज और लागू शुल्क शामिल नहीं होते।",
+    "hinglish_explanation": "Loan principal woh original rakam hai jo aap udhaar lete hain; ismein byaaj aur fees shamil nahi hote.",
+    "examples": {}
+  },
+  {
+    "id": "emi",
+    "term": "EMI",
+    "category": "credit",
+    "aliases": ["emi", "equated monthly instalment", "मासिक किस्त", "monthly instalment"],
+    "definition": "A scheduled periodic payment toward a loan, often monthly.",
+    "simple_explanation": "An EMI is a scheduled loan payment, usually made every month. It commonly includes principal and interest.",
+    "hindi_explanation": "EMI ऋण की तय किस्त होती है, जो आमतौर पर हर महीने दी जाती है। इसमें मूलधन और ब्याज शामिल हो सकते हैं।",
+    "hinglish_explanation": "EMI loan ki fixed schedule wali payment hoti hai, jo aam taur par har mahine di jaati hai.",
+    "examples": {}
+  },
+  {
+    "id": "outstanding_balance",
+    "term": "Outstanding balance",
+    "category": "credit",
+    "aliases": ["outstanding balance", "remaining loan", "बाकी बकाया", "बकाया राशि", "baaki loan"],
+    "definition": "The amount still owed at a particular time.",
+    "simple_explanation": "Outstanding balance is the amount that remains unpaid at a particular time. Check the lender statement for the exact amount and any fees.",
+    "hindi_explanation": "बकाया राशि वह पैसा है जिसका भुगतान अभी बाकी है। सही राशि और शुल्क के लिए ऋणदाता का विवरण देखें।",
+    "hinglish_explanation": "Outstanding balance woh rakam hai jiska payment abhi baaki hai. Exact amount lender ke statement se check karein.",
+    "examples": {}
+  },
+  {
+    "id": "late_payment_penalty",
+    "term": "Late-payment penalty",
+    "category": "risk",
+    "aliases": ["late payment penalty", "late fee", "जुर्माना", "लेट फीस", "late payment charge"],
+    "definition": "A charge that may apply when a payment is made after its due date, according to the agreement.",
+    "simple_explanation": "A late-payment charge may apply if you pay after the due date. Check your agreement and lender's current terms because charges differ.",
+    "hindi_explanation": "देय तारीख के बाद भुगतान करने पर समझौते की शर्तों के अनुसार अतिरिक्त शुल्क लग सकता है। शुल्क की पुष्टि अपने समझौते से करें।",
+    "hinglish_explanation": "Due date ke baad payment karne par agreement ke hisaab se extra charge lag sakta hai. Apni terms check karein.",
+    "examples": {}
+  },
+  {
+    "id": "insurance_premium",
+    "term": "Insurance premium",
+    "category": "risk",
+    "aliases": ["insurance premium", "premium", "बीमा प्रीमियम", "bima premium"],
+    "definition": "The amount paid to maintain an insurance policy under its terms.",
+    "simple_explanation": "An insurance premium is the amount you pay for an insurance policy. Check the policy for coverage, exclusions, and payment schedule.",
+    "hindi_explanation": "बीमा प्रीमियम वह राशि है जो बीमा पॉलिसी के लिए चुकाई जाती है। कवरेज और अपवादों के लिए पॉलिसी पढ़ें।",
+    "hinglish_explanation": "Insurance premium woh payment hai jo aap insurance policy ke liye karte hain. Coverage aur exclusions policy mein check karein.",
+    "examples": {}
+  },
+  {
+    "id": "financial_risk",
+    "term": "Financial risk",
+    "category": "risk",
+    "aliases": ["financial risk", "risk", "वित्तीय जोखिम", "paison ka risk"],
+    "definition": "The possibility that a financial event causes loss or makes a goal harder to achieve.",
+    "simple_explanation": "Financial risk means something could happen that causes money loss or makes it harder to meet your financial needs.",
+    "hindi_explanation": "वित्तीय जोखिम का मतलब है ऐसी संभावना जिससे पैसों का नुकसान हो सकता है या आर्थिक लक्ष्य पूरा करना कठिन हो सकता है।",
+    "hinglish_explanation": "Financial risk ka matlab hai aisi possibility jisse paise ka nuksaan ho sakta hai ya goal poora karna mushkil ho sakta hai.",
+    "examples": {}
+  },
+  {
+    "id": "budget",
+    "term": "Budget",
+    "category": "budgeting",
+    "aliases": ["budget", "बजट", "kharch ka plan"],
+    "definition": "A plan for expected income and expenses over a period.",
+    "simple_explanation": "A budget is a plan for how you expect to earn and spend money during a period.",
+    "hindi_explanation": "बजट एक योजना है जिसमें तय अवधि की अनुमानित आय और खर्च लिखे जाते हैं।",
+    "hinglish_explanation": "Budget ek plan hai jismein aap estimate karte hain ki ek period mein kitna paisa aayega aur kitna kharch hoga.",
+    "examples": {}
+  },
+  {
+    "id": "fixed_expenses",
+    "term": "Fixed expenses",
+    "category": "budgeting",
+    "aliases": ["fixed expenses", "fixed cost", "स्थिर खर्च"],
+    "definition": "Expenses that are usually similar in amount and recur regularly.",
+    "simple_explanation": "Fixed expenses are regular costs that usually stay similar, such as rent or a scheduled payment.",
+    "hindi_explanation": "स्थिर खर्च वे नियमित खर्च हैं जिनकी राशि आमतौर पर लगभग समान रहती है, जैसे किराया।",
+    "hinglish_explanation": "Fixed expenses woh regular kharche hain jo aam taur par similar rehte hain, jaise rent.",
+    "examples": {}
+  },
+  {
+    "id": "variable_expenses",
+    "term": "Variable expenses",
+    "category": "budgeting",
+    "aliases": ["variable expenses", "variable cost", "बदलते खर्च"],
+    "definition": "Expenses whose amounts change over time.",
+    "simple_explanation": "Variable expenses change depending on use or circumstances, such as transport, supplies, or some utility bills.",
+    "hindi_explanation": "बदलते खर्च वे हैं जिनकी राशि समय या ज़रूरत के अनुसार बदलती रहती है।",
+    "hinglish_explanation": "Variable expenses woh kharche hain jinki amount situation ya use ke hisaab se badalti rehti hai.",
+    "examples": {}
+  },
+  {
+    "id": "repayment_capacity",
+    "term": "Repayment capacity",
+    "category": "credit",
+    "aliases": ["repayment capacity", "ability to repay", "कर्ज चुकाने की क्षमता", "loan chukane ki capacity"],
+    "definition": "The ability to make loan payments while meeting other essential expenses.",
+    "simple_explanation": "Repayment capacity is whether you can make the loan payments on time while still paying essential household and business costs.",
+    "hindi_explanation": "ऋण चुकाने की क्षमता का मतलब है ज़रूरी घरेलू और व्यावसायिक खर्चों के साथ समय पर ऋण की किस्तें चुका पाना।",
+    "hinglish_explanation": "Repayment capacity ka matlab hai zaroori kharchon ke saath loan ki payments time par kar paana.",
+    "examples": {}
+  },
+  {
+    "id": "seasonal_income",
+    "term": "Seasonal income",
+    "category": "income",
+    "aliases": ["seasonal income", "मौसमी आय", "season ke hisaab se income"],
+    "definition": "Income that varies with seasons or particular periods of the year.",
+    "simple_explanation": "Seasonal income rises or falls during particular times of the year, for example when sales or farm work depend on a season.",
+    "hindi_explanation": "मौसमी आय वह आय है जो साल के अलग-अलग मौसमों या समय के अनुसार बदलती है।",
+    "hinglish_explanation": "Seasonal income woh kamai hai jo saal ke kuch seasons ya periods mein badh ya ghat sakti hai.",
+    "examples": {}
+  },
+  {
+    "id": "financial_goal",
+    "term": "Financial goal",
+    "category": "planning",
+    "aliases": ["financial goal", "money goal", "आर्थिक लक्ष्य", "paise ka goal"],
+    "definition": "A specific money-related outcome a person plans to achieve.",
+    "simple_explanation": "A financial goal is something you want to save or plan money for, such as equipment, education, or a future expense.",
+    "hindi_explanation": "आर्थिक लक्ष्य वह काम है जिसके लिए आप पैसे बचाने या योजना बनाने का लक्ष्य रखते हैं।",
+    "hinglish_explanation": "Financial goal woh money target hai jiske liye aap saving ya planning karte hain.",
+    "examples": {}
+  },
+  {
+    "id": "insurance_coverage",
+    "term": "Insurance coverage",
+    "category": "risk",
+    "aliases": ["insurance coverage", "coverage", "बीमा कवरेज"],
+    "definition": "The risks, events, or losses an insurance policy covers under its terms.",
+    "simple_explanation": "Insurance coverage describes what the policy may pay for, subject to its conditions, limits, and exclusions.",
+    "hindi_explanation": "बीमा कवरेज बताता है कि पॉलिसी की शर्तों, सीमाओं और अपवादों के अनुसार किन स्थितियों में भुगतान हो सकता है।",
+    "hinglish_explanation": "Insurance coverage batata hai ki policy ki conditions aur limits ke hisaab se kin situations mein payment ho sakti hai.",
+    "examples": {}
+  },
+  {
+    "id": "projected_cash_shortfall",
+    "term": "Projected cash shortfall",
+    "category": "budgeting",
+    "aliases": ["projected cash shortfall", "projected_cash_shortfall", "अनुमानित नकदी की कमी", "ਅਨੁਮਾਨਿਤ ਨਕਦੀ ਦੀ ਘਾਟ"],
+    "definition": "The amount by which the lowest projected cash balance falls below a chosen safety reserve.",
+    "simple_explanation": "A projected cash shortfall shows how much your expected cash may fall below the safety amount you want to keep. It is an estimate based on the dates and amounts entered.",
+    "hindi_explanation": "अनुमानित नकदी की कमी बताती है कि आने वाले दिनों में आपका अनुमानित पैसा तय सुरक्षा राशि से कितना कम हो सकता है। यह दर्ज की गई रकम और तारीखों पर आधारित अनुमान है।",
+    "hinglish_explanation": "Projected cash shortfall batata hai ki aane wale dino mein aapka andazee cash, aapke chune hue safety reserve se kitna neeche ja sakta hai.",
+    "punjabi_explanation": "ਅਨੁਮਾਨਿਤ ਨਕਦੀ ਦੀ ਘਾਟ ਦੱਸਦੀ ਹੈ ਕਿ ਆਉਣ ਵਾਲੇ ਦਿਨਾਂ ਵਿੱਚ ਤੁਹਾਡੀ ਅੰਦਾਜ਼ੀ ਰਕਮ ਚੁਣੇ ਹੋਏ ਸੁਰੱਖਿਆ ਰਿਜ਼ਰਵ ਤੋਂ ਕਿੰਨੀ ਘੱਟ ਹੋ ਸਕਦੀ ਹੈ।",
+    "examples": {}
+  },
+  {
+    "id": "debt_pressure",
+    "term": "Debt pressure",
+    "category": "credit",
+    "aliases": ["debt pressure", "debt_pressure", "ਕਰਜ਼ੇ ਦਾ ਦਬਾਅ", "ऋण का दबाव"],
+    "definition": "How loan repayments compare with income and essential expenses.",
+    "simple_explanation": "Debt pressure describes how demanding your loan payments may be compared with the money coming in and essential costs. It is not a credit score or a judgment about you.",
+    "hindi_explanation": "ऋण का दबाव बताता है कि आपकी किस्तें, आपकी आय और ज़रूरी खर्चों के मुकाबले कितनी भारी पड़ सकती हैं। यह क्रेडिट स्कोर या आपके बारे में कोई निर्णय नहीं है।",
+    "hinglish_explanation": "Debt pressure batata hai ki aapki loan kistein, aapki income aur zaroori kharchon ke muqable kitni bhaari ho sakti hain.",
+    "punjabi_explanation": "ਕਰਜ਼ੇ ਦਾ ਦਬਾਅ ਦੱਸਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀਆਂ ਕਿਸ਼ਤਾਂ ਆਮਦਨ ਅਤੇ ਜ਼ਰੂਰੀ ਖਰਚਿਆਂ ਦੇ ਮੁਕਾਬਲੇ ਕਿੰਨੀਆਂ ਭਾਰੀ ਹੋ ਸਕਦੀਆਂ ਹਨ।",
+    "examples": {}
+  },
+  {
+    "id": "cash_runway",
+    "term": "Cash runway",
+    "category": "budgeting",
+    "aliases": ["cash runway", "cash_runway", "ਨਕਦੀ ਕਿੰਨੇ ਦਿਨ ਚੱਲੇਗੀ", "नकदी कितने दिन चलेगी"],
+    "definition": "An estimate of how long available cash may cover expenses at the current rate.",
+    "simple_explanation": "Cash runway is an estimate of how many days your available cash could cover expenses if the money coming in and going out stayed similar. It can change when circumstances change.",
+    "hindi_explanation": "कैश रनवे यह अनुमान है कि मौजूदा हिसाब से आपके पास की नकदी कितने दिनों तक खर्चों में साथ दे सकती है। हालात बदलने पर यह अवधि भी बदल सकती है।",
+    "hinglish_explanation": "Cash runway ek andaza hai ki abhi ke hisaab se aapka available cash kitne din kharch sambhal sakta hai.",
+    "punjabi_explanation": "ਕੈਸ਼ ਰਨਵੇ ਇੱਕ ਅੰਦਾਜ਼ਾ ਹੈ ਕਿ ਮੌਜੂਦਾ ਹਾਲਾਤਾਂ ਵਿੱਚ ਤੁਹਾਡੀ ਨਕਦੀ ਕਿੰਨੇ ਦਿਨ ਖਰਚੇ ਚਲਾ ਸਕਦੀ ਹੈ।",
+    "examples": {}
+  },
+  {
+    "id": "income_variability",
+    "term": "Income variability",
+    "category": "income",
+    "aliases": ["income variability", "income_variability", "आय में उतार-चढ़ाव", "ਆਮਦਨ ਵਿੱਚ ਉਤਾਰ-ਚੜ੍ਹਾਅ"],
+    "definition": "Changes in the amount of income received across days, weeks, or months.",
+    "simple_explanation": "Income variability means your earnings are not the same every day or month. Planning with a range can be more realistic than assuming every period will be a good one.",
+    "hindi_explanation": "आय में उतार-चढ़ाव का मतलब है कि कमाई हर दिन या महीने एक जैसी नहीं रहती। योजना बनाते समय अच्छे और कम कमाई वाले दोनों समयों को ध्यान में रखना उपयोगी है।",
+    "hinglish_explanation": "Income variability ka matlab hai ki kamai har din ya mahine ek jaisi nahi hoti. Planning mein achhe aur kam dono din dhyan mein rakhein.",
+    "punjabi_explanation": "ਆਮਦਨ ਵਿੱਚ ਉਤਾਰ-ਚੜ੍ਹਾਅ ਦਾ ਮਤਲਬ ਹੈ ਕਿ ਕਮਾਈ ਹਰ ਦਿਨ ਜਾਂ ਮਹੀਨੇ ਇੱਕੋ ਜਿਹੀ ਨਹੀਂ ਹੁੰਦੀ। ਯੋਜਨਾ ਵਿੱਚ ਚੰਗੇ ਅਤੇ ਘੱਟ ਕਮਾਈ ਵਾਲੇ ਦੋਵੇਂ ਸਮੇਂ ਧਿਆਨ ਵਿੱਚ ਰੱਖੋ।",
+    "examples": {}
+  },
+  {
+    "id": "monthly_loan_payment",
+    "term": "Monthly loan payment",
+    "category": "credit",
+    "aliases": ["monthly loan payment", "monthly_loan_payment", "debt_repayment", "loan repayment", "मासिक ऋण किस्त", "ਮਹੀਨਾਵਾਰ ਕਰਜ਼ੇ ਦੀ ਕਿਸ਼ਤ"],
+    "definition": "A loan instalment scheduled to be paid each month.",
+    "simple_explanation": "A monthly loan payment is the amount due to the lender each month. Check the lender's schedule for the amount and due date; this explanation does not calculate either.",
+    "hindi_explanation": "मासिक ऋण किस्त वह रकम है जो हर महीने ऋणदाता को देनी होती है। सही रकम और तारीख के लिए ऋणदाता का भुगतान कार्यक्रम देखें।",
+    "hinglish_explanation": "Monthly loan payment woh rakam hai jo har mahine lender ko deni hoti hai. Rakam aur due date lender ke schedule se check karein.",
+    "punjabi_explanation": "ਮਹੀਨਾਵਾਰ ਕਰਜ਼ੇ ਦੀ ਕਿਸ਼ਤ ਉਹ ਰਕਮ ਹੈ ਜੋ ਹਰ ਮਹੀਨੇ ਕਰਜ਼ਾ ਦੇਣ ਵਾਲੇ ਨੂੰ ਦੇਣੀ ਹੁੰਦੀ ਹੈ। ਸਹੀ ਰਕਮ ਅਤੇ ਤਾਰੀਖ ਲਈ ਭੁਗਤਾਨ ਦਾ ਸ਼ਡਿਊਲ ਵੇਖੋ।",
+    "examples": {}
+  },
+  {
+    "id": "true_earnings",
+    "term": "True earnings",
+    "category": "income",
+    "aliases": ["true earnings", "true_earnings", "net earnings", "ਅਸਲ ਕਮਾਈ", "वास्तविक कमाई"],
+    "definition": "An estimate of business earnings after subtracting the work costs that were provided.",
+    "simple_explanation": "True earnings are an estimate of what may remain from business sales after the work costs you reported are subtracted. Costs you have not entered are not included, so the estimate may be higher than reality.",
+    "hindi_explanation": "वास्तविक कमाई का अनुमान बिक्री में से आपके बताए काम के खर्च घटाने के बाद बची रकम है। जो खर्च दर्ज नहीं हैं, वे इसमें शामिल नहीं होते; इसलिए अनुमान असल रकम से अधिक हो सकता है।",
+    "hinglish_explanation": "True earnings sales mein se aapke bataye kaam ke kharch ghatane ke baad bachi rakam ka andaza hai. Jo kharch nahi bataye gaye, woh shamil nahi hain.",
+    "punjabi_explanation": "ਅਸਲ ਕਮਾਈ ਦਾ ਅੰਦਾਜ਼ਾ ਵਿਕਰੀ ਵਿੱਚੋਂ ਤੁਹਾਡੇ ਦੱਸੇ ਕੰਮ ਦੇ ਖਰਚੇ ਘਟਾਉਣ ਤੋਂ ਬਾਅਦ ਬਚੀ ਰਕਮ ਹੈ। ਨਾ ਦੱਸੇ ਖਰਚੇ ਇਸ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ ਹਨ।",
+    "examples": {}
+  },
+  {
+    "id": "net_operating_cash",
+    "term": "Net operating cash",
+    "category": "budgeting",
+    "aliases": ["net operating cash", "net_operating_cash"],
+    "definition": "The money left from operating inflows after operating outflows over a period.",
+    "simple_explanation": "Net operating cash is the difference between money coming in from work and the operating costs going out during a period. It does not mean every bill or future payment is already covered.",
+    "hindi_explanation": "शुद्ध परिचालन नकदी किसी अवधि में काम से आई रकम में से काम के खर्च घटाने के बाद बची रकम है। इसका मतलब यह नहीं कि हर बिल या आने वाला भुगतान पहले से पूरा है।",
+    "hinglish_explanation": "Net operating cash ek period mein kaam se aayi rakam mein se kaam ke kharch ghatane ke baad bachi rakam hai.",
+    "punjabi_explanation": "ਸ਼ੁੱਧ ਕਾਰੋਬਾਰੀ ਨਕਦੀ ਇੱਕ ਸਮੇਂ ਦੌਰਾਨ ਕੰਮ ਤੋਂ ਆਈ ਰਕਮ ਵਿੱਚੋਂ ਕੰਮ ਦੇ ਖਰਚੇ ਘਟਾਉਣ ਤੋਂ ਬਾਅਦ ਬਚੀ ਰਕਮ ਹੈ।",
+    "examples": {}
+  },
+  {
+    "id": "supplier_credit",
+    "term": "Supplier credit",
+    "category": "credit",
+    "aliases": ["supplier credit", "supplier_credit", "उधार माल", "ਸਪਲਾਇਰ ਤੋਂ ਉਧਾਰ"],
+    "definition": "Goods or supplies received now with payment due later to the supplier.",
+    "simple_explanation": "Supplier credit means you receive stock or supplies now and agree to pay the supplier later. Confirm the amount and due date with the supplier.",
+    "hindi_explanation": "सप्लायर क्रेडिट का मतलब है कि सामान अभी मिलता है और उसका भुगतान बाद में करना होता है। रकम और तारीख सप्लायर से पक्की करें।",
+    "hinglish_explanation": "Supplier credit mein stock abhi milta hai aur payment baad mein karni hoti hai. Rakam aur due date supplier se confirm karein.",
+    "punjabi_explanation": "ਸਪਲਾਇਰ ਕ੍ਰੈਡਿਟ ਦਾ ਮਤਲਬ ਹੈ ਕਿ ਸਮਾਨ ਹੁਣ ਮਿਲਦਾ ਹੈ ਅਤੇ ਭੁਗਤਾਨ ਬਾਅਦ ਵਿੱਚ ਕਰਨਾ ਹੁੰਦਾ ਹੈ। ਰਕਮ ਅਤੇ ਤਾਰੀਖ ਸਪਲਾਇਰ ਨਾਲ ਪੱਕੀ ਕਰੋ।",
+    "examples": {}
+  },
+  {
+    "id": "income_shock",
+    "term": "Income shock",
+    "category": "income",
+    "aliases": ["income shock", "income_shock", "ਅਚਾਨਕ ਆਮਦਨ ਘਟਣਾ", "आय में अचानक गिरावट"],
+    "definition": "A sudden temporary drop or interruption in income.",
+    "simple_explanation": "An income shock is a sudden fall or pause in money coming in, such as when illness, weather, or a market closure affects work. It describes a possibility, not a prediction.",
+    "hindi_explanation": "आय में अचानक गिरावट का मतलब है कमाई का अचानक कम होना या कुछ समय रुक जाना, जैसे बीमारी, मौसम या बाज़ार बंद होने से। यह एक संभावना है, भविष्यवाणी नहीं।",
+    "hinglish_explanation": "Income shock ka matlab hai kamai ka achanak girna ya kuch samay rukna, jaise bimari, mausam ya bazaar band hone se.",
+    "punjabi_explanation": "ਆਮਦਨ ਦਾ ਝਟਕਾ ਕਮਾਈ ਵਿੱਚ ਅਚਾਨਕ ਕਮੀ ਜਾਂ ਰੁਕਾਵਟ ਹੈ, ਜਿਵੇਂ ਬਿਮਾਰੀ, ਮੌਸਮ ਜਾਂ ਬਾਜ਼ਾਰ ਬੰਦ ਹੋਣ ਕਾਰਨ। ਇਹ ਸੰਭਾਵਨਾ ਹੈ, ਭਵਿੱਖਬਾਣੀ ਨਹੀਂ।",
+    "examples": {}
+  },
+  {
+    "id": "gross_sales",
+    "term": "Gross sales",
+    "category": "income",
+    "aliases": ["gross sales", "gross_sales", "ਕੁੱਲ ਵਿਕਰੀ", "कुल बिक्री"],
+    "definition": "The total money received from sales before subtracting inventory or other business costs.",
+    "simple_explanation": "Gross sales are all the money received from selling goods before taking away stock and other work costs. They are not the same as money left to spend.",
+    "hindi_explanation": "कुल बिक्री सामान बेचने से मिली पूरी रकम है, जिसमें से स्टॉक और काम के दूसरे खर्च अभी नहीं घटाए गए हैं। यह खर्च करने के लिए बची रकम के बराबर नहीं है।",
+    "hinglish_explanation": "Gross sales samaan bechkar mili poori rakam hai; ismein se stock aur kaam ke kharch abhi nahi ghate gaye hain.",
+    "punjabi_explanation": "ਕੁੱਲ ਵਿਕਰੀ ਸਮਾਨ ਵੇਚਣ ਤੋਂ ਮਿਲੀ ਪੂਰੀ ਰਕਮ ਹੈ, ਜਿਸ ਵਿੱਚੋਂ ਸਟਾਕ ਅਤੇ ਕੰਮ ਦੇ ਹੋਰ ਖਰਚੇ ਹਾਲੇ ਨਹੀਂ ਘਟਾਏ ਗਏ। ਇਹ ਖਰਚਣ ਲਈ ਬਚੀ ਰਕਮ ਨਹੀਂ ਹੈ।",
+    "examples": {}
+  },
+  {
+    "id": "minimum_reserve",
+    "term": "Minimum safety reserve",
+    "category": "budgeting",
+    "aliases": ["minimum reserve", "minimum_reserve", "safety reserve", "ਸੁਰੱਖਿਆ ਰਿਜ਼ਰਵ", "सुरक्षा रिज़र्व"],
+    "definition": "The minimum amount of cash a person chooses to keep available for essential needs.",
+    "simple_explanation": "A minimum safety reserve is the amount of cash you choose to keep aside for essential needs. It is a personal buffer, not a required balance set by LUMO.",
+    "hindi_explanation": "न्यूनतम सुरक्षा रिज़र्व वह रकम है जिसे आप ज़रूरी जरूरतों के लिए अलग रखना चुनते हैं। यह आपका अपना सुरक्षा बफर है, LUMO द्वारा तय अनिवार्य रकम नहीं।",
+    "hinglish_explanation": "Minimum safety reserve woh rakam hai jo aap zaroori needs ke liye alag rakhna chunte hain. Yeh aapka apna buffer hai.",
+    "punjabi_explanation": "ਘੱਟੋ-ਘੱਟ ਸੁਰੱਖਿਆ ਰਿਜ਼ਰਵ ਉਹ ਰਕਮ ਹੈ ਜੋ ਤੁਸੀਂ ਜ਼ਰੂਰੀ ਲੋੜਾਂ ਲਈ ਵੱਖਰੀ ਰੱਖਣੀ ਚੁਣਦੇ ਹੋ। ਇਹ ਤੁਹਾਡਾ ਆਪਣਾ ਬਫਰ ਹੈ, LUMO ਵੱਲੋਂ ਲਾਜ਼ਮੀ ਕੀਤੀ ਰਕਮ ਨਹੀਂ।",
+    "examples": {}
+  }
+]

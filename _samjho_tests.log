@@ -1,0 +1,101 @@
+....F........................................................s.......... [ 36%]
+........................................................................ [ 72%]
+......................................................                   [100%]
+================================== FAILURES ===================================
+___________ test_bhashini_aliases_return_truthful_offline_fallback ____________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000189C58E3890>
+
+    def test_bhashini_aliases_return_truthful_offline_fallback(monkeypatch):
+        from app.bhashini import BhashiniError
+        from app.main import bhashini
+    
+        async def unavailable(*args, **kwargs):
+            raise BhashiniError("credentials are not configured")
+    
+        monkeypatch.setattr(bhashini, "translate", unavailable)
+        monkeypatch.setattr(bhashini, "synthesize", unavailable)
+    
+        translation = client.post("/api/translate", json={
+            "text": "Namaste", "source_language": "hi", "target_language": "en",
+        })
+        assert translation.status_code == 200
+        assert translation.json()["translated"] is False
+        assert translation.json()["provider"] == "offline_fallback"
+        assert translation.json()["text"] == "Namaste"
+    
+        punjabi_translation = client.post("/api/translate", json={
+            "text": "Namaste", "source_language": "en", "target_language": "pa",
+        })
+        assert punjabi_translation.status_code == 200
+        assert punjabi_translation.json()["translated"] is False
+    
+        speech = client.post("/api/speech", json={"text": "Namaste", "language": "hi"})
+        assert speech.status_code == 200
+>       assert speech.json()["audio_available"] is False
+               ^^^^^^^^^^^^^
+
+tests\test_api.py:145: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Users\Disha Saini\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpx\_models.py:832: in json
+    return jsonlib.loads(self.content, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+s = b'RIFF\x9c`\x00\x00WAVEfmt \x10\x00\x00\x00\x01\x00\x01\x00"V\x00\x00D\xac\x00\x00\x02\x00\x10\x00datax`\x00\x00R\x01^...f9\xff\xfb\xff\xf9\xff\xf5\xff\xfd\xff\xf7\xff\xf8\xff\xf6\xff\xf9\xff\xfc\xff\xf9\xff\xf8\xff\xf8\xff\xfa\xff\xf7\xff'
+cls = None, object_hook = None, parse_float = None, parse_int = None
+parse_constant = None, object_pairs_hook = None, kw = {}
+
+    def loads(s, *, cls=None, object_hook=None, parse_float=None,
+            parse_int=None, parse_constant=None, object_pairs_hook=None, **kw):
+        """Deserialize ``s`` (a ``str``, ``bytes`` or ``bytearray`` instance
+        containing a JSON document) to a Python object.
+    
+        ``object_hook`` is an optional function that will be called with the
+        result of any object literal decode (a ``dict``). The return value of
+        ``object_hook`` will be used instead of the ``dict``. This feature
+        can be used to implement custom decoders (e.g. JSON-RPC class hinting).
+    
+        ``object_pairs_hook`` is an optional function that will be called with the
+        result of any object literal decoded with an ordered list of pairs.  The
+        return value of ``object_pairs_hook`` will be used instead of the ``dict``.
+        This feature can be used to implement custom decoders.  If ``object_hook``
+        is also defined, the ``object_pairs_hook`` takes priority.
+    
+        ``parse_float``, if specified, will be called with the string
+        of every JSON float to be decoded. By default this is equivalent to
+        float(num_str). This can be used to use another datatype or parser
+        for JSON floats (e.g. decimal.Decimal).
+    
+        ``parse_int``, if specified, will be called with the string
+        of every JSON int to be decoded. By default this is equivalent to
+        int(num_str). This can be used to use another datatype or parser
+        for JSON integers (e.g. float).
+    
+        ``parse_constant``, if specified, will be called with one of the
+        following strings: -Infinity, Infinity, NaN.
+        This can be used to raise an exception if invalid JSON numbers
+        are encountered.
+    
+        To use a custom ``JSONDecoder`` subclass, specify it with the ``cls``
+        kwarg; otherwise ``JSONDecoder`` is used.
+        """
+        if isinstance(s, str):
+            if s.startswith('\ufeff'):
+                raise JSONDecodeError("Unexpected UTF-8 BOM (decode using utf-8-sig)",
+                                      s, 0)
+        else:
+            if not isinstance(s, (bytes, bytearray)):
+                raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+                                f'not {s.__class__.__name__}')
+>           s = s.decode(detect_encoding(s), 'surrogatepass')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9c in position 4: invalid start byte
+
+C:\Users\Disha Saini\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py:341: UnicodeDecodeError
+------------------------------ Captured log call ------------------------------
+WARNING  lumo.api:main.py:223 Bhashini translation unavailable: credentials are not configured
+WARNING  lumo.api:main.py:223 Bhashini translation unavailable: credentials are not configured
+=========================== short test summary info ===========================
+FAILED tests/test_api.py::test_bhashini_aliases_return_truthful_offline_fallback
+1 failed, 196 passed, 1 skipped in 139.20s (0:02:19)

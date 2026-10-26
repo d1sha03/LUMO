@@ -1,0 +1,7 @@
+sarvamai
+fastapi
+uvicorn
+pydantic>=2
+python-dotenv
+pytest
+httpx

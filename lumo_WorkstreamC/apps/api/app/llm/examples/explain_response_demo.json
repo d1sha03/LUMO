@@ -1,0 +1,15 @@
+{
+  "language": "hi-IN",
+  "explanation": "अनुमानित नकदी की कमी का मतलब है कि आपने जो आमदनी और भुगतान बताए हैं, उनके हिसाब से आपके हाथ में रखने योग्य न्यूनतम रकम से कम पैसा बच सकता है। यह एक चेतावनी है, तय परिणाम नहीं, क्योंकि असली बिक्री और भुगतान अलग हो सकते हैं।",
+  "example": "इस मामले में सबसे कम नकदी 2026-11-01 को होने का अनुमान है, और वह आपकी सुरक्षित रकम से लगभग ₹1,200 कम हो सकती है।",
+  "provider": "fallback",
+  "mode": "demo",
+  "warnings": [
+    "No government LLM is configured; deterministic demo mode was used."
+  ],
+  "audio": {
+    "status": "unavailable",
+    "mime_type": null,
+    "audio_base64": null
+  }
+}

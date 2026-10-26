@@ -1,0 +1,99 @@
+{
+  "mode": "demo",
+  "provider": "fallback",
+  "draft_twin": {
+    "schema_version": "1.0",
+    "twin_id": "twin_2026-10-19",
+    "as_of_date": "2026-10-19",
+    "language": "hi-IN",
+    "profile": {
+      "occupation": "vegetable vendor",
+      "cash_on_hand": 2000,
+      "minimum_reserve": 1000,
+      "forecast_days": 30
+    },
+    "cash_flows": [
+      {
+        "id": "cf_business_sales",
+        "label": "Daily sales",
+        "direction": "inflow",
+        "category": "business_sales",
+        "amount": 1500,
+        "frequency": "daily",
+        "start_date": "2026-10-19",
+        "confidence": 0.8,
+        "source_type": "user_statement",
+        "source_note": "roz 1500 rupaye bikri hoti hai",
+        "essential": false
+      },
+      {
+        "id": "cf_business_stock_cost",
+        "label": "Daily stock purchases",
+        "direction": "outflow",
+        "category": "business_stock_cost",
+        "amount": 900,
+        "frequency": "daily",
+        "start_date": "2026-10-19",
+        "confidence": 0.8,
+        "source_type": "user_statement",
+        "source_note": "Maal pe roz 900 kharcha",
+        "essential": true
+      },
+      {
+        "id": "cf_household_essential",
+        "label": "Daily household expenses",
+        "direction": "outflow",
+        "category": "household_essential",
+        "amount": 300,
+        "frequency": "daily",
+        "start_date": "2026-10-19",
+        "confidence": 0.8,
+        "source_type": "user_statement",
+        "source_note": "Ghar ka kharcha 300 daily",
+        "essential": true
+      }
+    ],
+    "goals": []
+  },
+  "questions_required": [],
+  "extracted_facts": [
+    {
+      "field": "profile.cash_on_hand",
+      "value": 2000,
+      "source_quote": "Haath mein 2000 hai",
+      "confidence": 0.8,
+      "source_type": "user_statement"
+    },
+    {
+      "field": "profile.minimum_reserve",
+      "value": 1000,
+      "source_quote": "Kam se kam 1000 rakhna hai",
+      "confidence": 0.8,
+      "source_type": "user_statement"
+    },
+    {
+      "field": "cash_flows.business_sales.amount",
+      "value": 1500,
+      "source_quote": "roz 1500 rupaye bikri hoti hai",
+      "confidence": 0.8,
+      "source_type": "user_statement"
+    },
+    {
+      "field": "cash_flows.business_stock_cost.amount",
+      "value": 900,
+      "source_quote": "Maal pe roz 900 kharcha",
+      "confidence": 0.8,
+      "source_type": "user_statement"
+    },
+    {
+      "field": "cash_flows.household_essential.amount",
+      "value": 300,
+      "source_quote": "Ghar ka kharcha 300 daily",
+      "confidence": 0.8,
+      "source_type": "user_statement"
+    }
+  ],
+  "warnings": [
+    "No government LLM is configured; deterministic demo mode was used."
+  ]
+}

@@ -1,0 +1,28 @@
+INFO:     Started server process [27684]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56929 - "POST /api/v1/translate HTTP/1.1" 422 Unprocessable Entity
+2026-10-26 19:08:03,775 INFO httpx: HTTP Request: POST https://meity-auth.ulcacontrib.org/ulca/apis/v0/model/getModelsPipeline "HTTP/1.1 400 "
+2026-10-26 19:08:03,775 WARNING lumo.api: Bhashini translation unavailable: Client error '400 ' for url 'https://meity-auth.ulcacontrib.org/ulca/apis/v0/model/getModelsPipeline'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+INFO:     127.0.0.1:51094 - "POST /api/v1/translate HTTP/1.1" 200 OK
+2026-10-26 19:08:29,820 INFO httpx: HTTP Request: POST https://meity-auth.ulcacontrib.org/ulca/apis/v0/model/getModelsPipeline "HTTP/1.1 400 "
+2026-10-26 19:08:29,820 WARNING lumo.api: Bhashini translation unavailable: Client error '400 ' for url 'https://meity-auth.ulcacontrib.org/ulca/apis/v0/model/getModelsPipeline'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+INFO:     127.0.0.1:51102 - "POST /api/v1/translate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56550 - "OPTIONS /api/explain HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53698 - "OPTIONS /api/explain HTTP/1.1" 200 OK
+2026-10-26 19:39:21,170 INFO httpx: HTTP Request: POST https://api.sarvam.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53698 - "POST /api/explain HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59781 - "OPTIONS /api/resources?occupation=%E0%A4%B8%E0%A4%AC%E0%A5%8D%E0%A4%9C%E0%A4%BC%E0%A5%80+%E0%A4%AC%E0%A5%87%E0%A4%9A%E0%A4%A4%E0%A5%80+%E0%A4%B9%E0%A5%82%E0%A4%82&language=en-IN HTTP/1.1" 200 OK
+2026-10-26 19:39:22,802 INFO lumo.resources: Official directory source unavailable for https://www.jansuraksha.gov.in/: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)
+2026-10-26 19:39:22,841 INFO httpx: HTTP Request: GET https://www.eshram.gov.in/ "HTTP/1.1 200 OK"
+2026-10-26 19:39:22,865 INFO httpx: HTTP Request: GET https://www.myscheme.gov.in/ "HTTP/1.1 200 OK"
+2026-10-26 19:39:22,880 INFO httpx: HTTP Request: GET https://pmsvanidhi.mohua.gov.in/ "HTTP/1.1 200 OK"
+2026-10-26 19:39:23,039 INFO httpx: HTTP Request: GET https://maandhan.in/ "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:59781 - "GET /api/resources?occupation=%E0%A4%B8%E0%A4%AC%E0%A5%8D%E0%A4%9C%E0%A4%BC%E0%A5%80+%E0%A4%AC%E0%A5%87%E0%A4%9A%E0%A4%A4%E0%A5%80+%E0%A4%B9%E0%A5%82%E0%A4%82&language=en-IN HTTP/1.1" 200 OK
+2026-10-26 19:39:26,140 INFO httpx: HTTP Request: POST https://api.sarvam.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56550 - "POST /api/explain HTTP/1.1" 200 OK
+2026-10-26 19:39:30,771 INFO httpx: HTTP Request: POST https://api.sarvam.ai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53698 - "POST /api/explain HTTP/1.1" 200 OK

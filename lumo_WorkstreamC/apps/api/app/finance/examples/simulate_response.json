@@ -1,0 +1,593 @@
+{
+  "schema_version": "1.0",
+  "results": [
+    {
+      "scenario_id": "baseline",
+      "label": "Expected situation",
+      "status": "within_reserve",
+      "timeline": [
+        {
+          "date": "2026-10-19",
+          "opening_balance": 4000,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 4300,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-20",
+          "opening_balance": 4300,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 4600,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-21",
+          "opening_balance": 4600,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 4900,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-22",
+          "opening_balance": 4900,
+          "inflows": 1500,
+          "outflows": 2000,
+          "closing_balance": 4400,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-23",
+          "opening_balance": 4400,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 4700,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-24",
+          "opening_balance": 4700,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 5000,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-25",
+          "opening_balance": 5000,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 5300,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-26",
+          "opening_balance": 5300,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 5600,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-27",
+          "opening_balance": 5600,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 5900,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-28",
+          "opening_balance": 5900,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 6200,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-29",
+          "opening_balance": 6200,
+          "inflows": 1500,
+          "outflows": 2000,
+          "closing_balance": 5700,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-30",
+          "opening_balance": 5700,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 6000,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-31",
+          "opening_balance": 6000,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 6300,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-01",
+          "opening_balance": 6300,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 6600,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-02",
+          "opening_balance": 6600,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 6900,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-03",
+          "opening_balance": 6900,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 7200,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-04",
+          "opening_balance": 7200,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 7500,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-05",
+          "opening_balance": 7500,
+          "inflows": 1500,
+          "outflows": 2000,
+          "closing_balance": 7000,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-06",
+          "opening_balance": 7000,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 7300,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-07",
+          "opening_balance": 7300,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 7600,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-08",
+          "opening_balance": 7600,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 7900,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        }
+      ],
+      "minimum_balance": 4300,
+      "minimum_balance_date": "2026-10-19",
+      "shortfall_to_reserve": 0,
+      "first_reserve_breach_date": null,
+      "first_cash_deficit_date": null,
+      "major_drivers": [
+        {
+          "flow_id": "cf_sales",
+          "label": "Daily vegetable sales",
+          "category": "business_sales",
+          "direction": "inflow",
+          "occurrences": 1,
+          "total_amount": 1500,
+          "net_effect": 1500,
+          "shock_adjustment": 0,
+          "description": "Daily vegetable sales: 1 occurrence totalling ₹1,500 added to cash up to 2026-10-19"
+        },
+        {
+          "flow_id": "cf_stock",
+          "label": "Daily stock purchase",
+          "category": "business_stock_cost",
+          "direction": "outflow",
+          "occurrences": 1,
+          "total_amount": 900,
+          "net_effect": -900,
+          "shock_adjustment": 0,
+          "description": "Daily stock purchase: 1 occurrence totalling ₹900 taken from cash up to 2026-10-19"
+        },
+        {
+          "flow_id": "cf_home",
+          "label": "Household food and expenses",
+          "category": "household_essential",
+          "direction": "outflow",
+          "occurrences": 1,
+          "total_amount": 300,
+          "net_effect": -300,
+          "shock_adjustment": 0,
+          "description": "Household food and expenses: 1 occurrence totalling ₹300 taken from cash up to 2026-10-19"
+        }
+      ],
+      "notes": [
+        "Assumes ₹4,000 cash on hand at the start of 2026-10-19 and a minimum reserve of ₹1,500. Expected income is not counted as cash until its scheduled date. Horizon: 2026-10-19 to 2026-11-08 (21 days, both ends included).",
+        "Every listed cash flow is assumed to happen in full on its scheduled date. Amounts come from the user's statements or estimates, so this is a projection, not a certainty. Same-day inflows and outflows are netted; intraday dips are not shown.",
+        "Projected closing cash stays at or above the reserve throughout the horizon (lowest ₹4,300 on 2026-10-19), based on these assumptions.",
+        "Drivers are the largest net cash effects of the scheduled flows from 2026-10-19 to the lowest-balance date 2026-10-19."
+      ]
+    },
+    {
+      "scenario_id": "sales_drop_30",
+      "label": "Sales fall by 30% for 14 days",
+      "status": "reserve_breach",
+      "timeline": [
+        {
+          "date": "2026-10-19",
+          "opening_balance": 4000,
+          "inflows": 1050,
+          "outflows": 1200,
+          "closing_balance": 3850,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-20",
+          "opening_balance": 3850,
+          "inflows": 1050,
+          "outflows": 1200,
+          "closing_balance": 3700,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-21",
+          "opening_balance": 3700,
+          "inflows": 1050,
+          "outflows": 1200,
+          "closing_balance": 3550,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-22",
+          "opening_balance": 3550,
+          "inflows": 1050,
+          "outflows": 2000,
+          "closing_balance": 2600,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-23",
+          "opening_balance": 2600,
+          "inflows": 1050,
+          "outflows": 1200,
+          "closing_balance": 2450,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-24",
+          "opening_balance": 2450,
+          "inflows": 1050,
+          "outflows": 1200,
+          "closing_balance": 2300,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-25",
+          "opening_balance": 2300,
+          "inflows": 1050,
+          "outflows": 1200,
+          "closing_balance": 2150,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-26",
+          "opening_balance": 2150,
+          "inflows": 1050,
+          "outflows": 1200,
+          "closing_balance": 2000,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-27",
+          "opening_balance": 2000,
+          "inflows": 1050,
+          "outflows": 1200,
+          "closing_balance": 1850,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-28",
+          "opening_balance": 1850,
+          "inflows": 1050,
+          "outflows": 1200,
+          "closing_balance": 1700,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-29",
+          "opening_balance": 1700,
+          "inflows": 1050,
+          "outflows": 2000,
+          "closing_balance": 750,
+          "reserve_gap": 750,
+          "minimum_reserve": 1500,
+          "below_reserve": true,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-30",
+          "opening_balance": 750,
+          "inflows": 1050,
+          "outflows": 1200,
+          "closing_balance": 600,
+          "reserve_gap": 900,
+          "minimum_reserve": 1500,
+          "below_reserve": true,
+          "below_zero": false
+        },
+        {
+          "date": "2026-10-31",
+          "opening_balance": 600,
+          "inflows": 1050,
+          "outflows": 1200,
+          "closing_balance": 450,
+          "reserve_gap": 1050,
+          "minimum_reserve": 1500,
+          "below_reserve": true,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-01",
+          "opening_balance": 450,
+          "inflows": 1050,
+          "outflows": 1200,
+          "closing_balance": 300,
+          "reserve_gap": 1200,
+          "minimum_reserve": 1500,
+          "below_reserve": true,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-02",
+          "opening_balance": 300,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 600,
+          "reserve_gap": 900,
+          "minimum_reserve": 1500,
+          "below_reserve": true,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-03",
+          "opening_balance": 600,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 900,
+          "reserve_gap": 600,
+          "minimum_reserve": 1500,
+          "below_reserve": true,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-04",
+          "opening_balance": 900,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 1200,
+          "reserve_gap": 300,
+          "minimum_reserve": 1500,
+          "below_reserve": true,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-05",
+          "opening_balance": 1200,
+          "inflows": 1500,
+          "outflows": 2000,
+          "closing_balance": 700,
+          "reserve_gap": 800,
+          "minimum_reserve": 1500,
+          "below_reserve": true,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-06",
+          "opening_balance": 700,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 1000,
+          "reserve_gap": 500,
+          "minimum_reserve": 1500,
+          "below_reserve": true,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-07",
+          "opening_balance": 1000,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 1300,
+          "reserve_gap": 200,
+          "minimum_reserve": 1500,
+          "below_reserve": true,
+          "below_zero": false
+        },
+        {
+          "date": "2026-11-08",
+          "opening_balance": 1300,
+          "inflows": 1500,
+          "outflows": 1200,
+          "closing_balance": 1600,
+          "reserve_gap": 0,
+          "minimum_reserve": 1500,
+          "below_reserve": false,
+          "below_zero": false
+        }
+      ],
+      "minimum_balance": 300,
+      "minimum_balance_date": "2026-11-01",
+      "shortfall_to_reserve": 1200,
+      "first_reserve_breach_date": "2026-10-29",
+      "first_cash_deficit_date": null,
+      "major_drivers": [
+        {
+          "flow_id": "cf_sales",
+          "label": "Daily vegetable sales",
+          "category": "business_sales",
+          "direction": "inflow",
+          "occurrences": 14,
+          "total_amount": 14700,
+          "net_effect": 14700,
+          "shock_adjustment": -6300,
+          "description": "Daily vegetable sales: 14 occurrences totalling ₹14,700 added to cash up to 2026-11-01 (reduced by ₹6,300 by the scenario's income shock)"
+        },
+        {
+          "flow_id": "cf_stock",
+          "label": "Daily stock purchase",
+          "category": "business_stock_cost",
+          "direction": "outflow",
+          "occurrences": 14,
+          "total_amount": 12600,
+          "net_effect": -12600,
+          "shock_adjustment": 0,
+          "description": "Daily stock purchase: 14 occurrences totalling ₹12,600 taken from cash up to 2026-11-01"
+        },
+        {
+          "flow_id": "cf_home",
+          "label": "Household food and expenses",
+          "category": "household_essential",
+          "direction": "outflow",
+          "occurrences": 14,
+          "total_amount": 4200,
+          "net_effect": -4200,
+          "shock_adjustment": 0,
+          "description": "Household food and expenses: 14 occurrences totalling ₹4,200 taken from cash up to 2026-11-01"
+        },
+        {
+          "flow_id": "cf_loan",
+          "label": "Weekly loan repayment",
+          "category": "debt_repayment",
+          "direction": "outflow",
+          "occurrences": 2,
+          "total_amount": 1600,
+          "net_effect": -1600,
+          "shock_adjustment": 0,
+          "description": "Weekly loan repayment: 2 occurrences totalling ₹1,600 taken from cash up to 2026-11-01"
+        }
+      ],
+      "notes": [
+        "Assumes ₹4,000 cash on hand at the start of 2026-10-19 and a minimum reserve of ₹1,500. Expected income is not counted as cash until its scheduled date. Horizon: 2026-10-19 to 2026-11-08 (21 days, both ends included).",
+        "Every listed cash flow is assumed to happen in full on its scheduled date. Amounts come from the user's statements or estimates, so this is a projection, not a certainty. Same-day inflows and outflows are netted; intraday dips are not shown.",
+        "Scenario assumption: 'business_sales' inflows are multiplied by 0.7 from 2026-10-19 to 2026-11-01 (14 days). 14 scheduled occurrence(s) changed; net cash effect -₹6,300.",
+        "Projected closing cash falls below the reserve (lowest ₹300 on 2026-11-01; first below on 2026-10-29). This depends on the assumptions above, is not certain, and does not by itself mean the business is insolvent.",
+        "Drivers are the largest net cash effects of the scheduled flows from 2026-10-19 to the lowest-balance date 2026-11-01."
+      ]
+    }
+  ],
+  "comparison": {
+    "baseline_scenario_id": "baseline",
+    "most_stressed_scenario_id": "sales_drop_30",
+    "change_in_minimum_balance": -4000,
+    "comparison_basis": "Compares the lowest projected end-of-day cash balance in each scenario over the forecast horizon (change = most stressed minus baseline). It compares projected cash positions under stated assumptions; it is not a probability of loss or default.",
+    "worst_shortfall_date": "2026-11-01",
+    "worst_shortfall_to_reserve": 1200
+  }
+}

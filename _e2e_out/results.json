@@ -1,0 +1,157 @@
+[
+ {
+  "step": "intake typed hi-IN",
+  "ok": true,
+  "detail": "HTTP 200 mode=live provider=sarvam:sarvam-105b flows=4 cash=5000 reserve=3000 goals=0 questions=1 asked=['cash_flows.business_sales']"
+ },
+ {
+  "step": "clarification answer hi-IN",
+  "ok": true,
+  "detail": "HTTP 200 mode=live provider=sarvam:sarvam-105b flows=4 cash=5000 reserve=3000 goals=0 questions=0 still_asked=[]"
+ },
+ {
+  "step": "simulate hi-IN",
+  "ok": true,
+  "detail": "scenarios=2 labels=['Current plan', 'Income falls 40 percent for 10 days'] min_balance=[1100, -1900] shortfall=[1900, 4900]"
+ },
+ {
+  "step": "recommendation hi-IN",
+  "ok": true,
+  "detail": "source=sarvam_llm llm_error='None' actions=n/a text='नमस्ते। यह जानकारी और गणनाएँ LUMO के वित्तीय इंजन से आई हैं, मैंने नहीं बनाई।\\n\\nLUMO estimates के अनुसार, आपकी स्थिति फिल'"
+ },
+ {
+  "step": "intake typed en-IN",
+  "ok": true,
+  "detail": "HTTP 200 mode=live provider=sarvam:sarvam-105b flows=4 cash=42000 reserve=15000 goals=0 questions=0 asked=[]"
+ },
+ {
+  "step": "simulate en-IN",
+  "ok": true,
+  "detail": "scenarios=2 labels=['Current plan', 'Income falls 40 percent for 10 days'] min_balance=[44500, 26300] shortfall=[0, 0]"
+ },
+ {
+  "step": "recommendation en-IN",
+  "ok": true,
+  "detail": "source=sarvam_llm llm_error='None' actions=n/a text='It appears your income fluctuates, and working with irregular earnings is challenging—you are doing your best. Your busi'"
+ },
+ {
+  "step": "intake typed pa-IN",
+  "ok": true,
+  "detail": "HTTP 200 mode=live provider=sarvam:sarvam-105b flows=3 cash=9000 reserve=3000 goals=0 questions=0 asked=[]"
+ },
+ {
+  "step": "simulate pa-IN",
+  "ok": true,
+  "detail": "scenarios=2 labels=['Current plan', 'Income falls 40 percent for 10 days'] min_balance=[6500, 3140] shortfall=[0, 0]"
+ },
+ {
+  "step": "recommendation pa-IN",
+  "ok": true,
+  "detail": "source=sarvam_llm llm_error='None' actions=n/a text='ਇਹ ਨੰਬਰ LUMO ਦੇ ਵਿੱਤੀ ਇੰਜਣ ਵੱਲੋਂ ਕੱਢੇ ਗਏ ਹਨ, ਮੇਰੇ ਵੱਲੋਂ ਨਹੀਂ। ਤੁਹਾਡੀ ਅੰਦਾਜ਼ਨ ਮਹੀਨਾਵਾਰ ਕਮਾਈ ₹31,200 ਹੈ ਅਤੇ ਮਹੀਨੇ ਦੇ ਅੰਤ ਵ'"
+ },
+ {
+  "step": "intake typed hi-IN-mixed",
+  "ok": false,
+  "detail": "HTTP 200 mode=demo provider=fallback flows=1 cash=9500 reserve=4000 goals=0 questions=2 asked=['cash_flows.household_essential.start_date', 'cash_flows.business_stock_cost']"
+ },
+ {
+  "step": "clarification answer hi-IN-mixed",
+  "ok": true,
+  "detail": "HTTP 200 mode=live provider=sarvam:sarvam-105b flows=2 cash=9500 reserve=4000 goals=0 questions=1 still_asked=['cash_flows.business_stock_cost']"
+ },
+ {
+  "step": "simulate hi-IN-mixed",
+  "ok": true,
+  "detail": "scenarios=2 labels=['Current plan', 'Income falls 40 percent for 10 days'] min_balance=[12700, 11420] shortfall=[0, 0]"
+ },
+ {
+  "step": "recommendation hi-IN-mixed",
+  "ok": true,
+  "detail": "source=sarvam_llm llm_error='None' actions=n/a text='नमस्ते, यहाँ आपके वित्तीय सारांश के बारे में जानकारी है।\\n\\nलूमू के वित्तीय इंजन के अनुसार, आपकी अनुमानित मासिक आय ₹83,200'"
+ },
+ {
+  "step": "STT saaras:v4 hi-IN",
+  "ok": true,
+  "detail": "HTTP 200 model=saaras:v4 detected=hi-IN transcript='नमस्ते। मेरी रोज की कमाई आठ सौ रुपये है और माल पर पांच सौ रुपये लगते हैं।'"
+ },
+ {
+  "step": "STT saaras:v4 pa-IN",
+  "ok": true,
+  "detail": "HTTP 200 model=saaras:v4 detected=pa-IN transcript='ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ, ਮੈਂ ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਚਾਹ ਦੀ ਦੁਕਾਨ ਚਲਾਉਂਦਾ।'"
+ },
+ {
+  "step": "STT saaras:v4 en-IN",
+  "ok": true,
+  "detail": "HTTP 200 model=saaras:v4 detected=en-IN transcript='Hello, my daily income is 800 rupees and stock costs 500.'"
+ },
+ {
+  "step": "STT auto-detect (language unknown)",
+  "ok": true,
+  "detail": "HTTP 200 detected=hi-IN text='नमस्ते। मेरी रोज की कमाई आठ सौ रुपये है। और माल पर पांच सौ रुपये लगते '"
+ },
+ {
+  "step": "VOICE -> STT -> LLM -> Twin",
+  "ok": true,
+  "detail": "HTTP 200 mode=live provider=sarvam:sarvam-105b flows=2 cash=5000 reserve=None goals=0 questions=3 flows=['business_sales', 'household_essential']"
+ },
+ {
+  "step": "VOICE -> ... -> simulation",
+  "ok": false,
+  "detail": "HTTP 422 {\"error\":\"validation_error\",\"message\":\"The simulation cannot run until the listed inputs are provided or corrected.\",\"issues\":[{\"field\":\"profile.minimum_reserve"
+ },
+ {
+  "step": "STT failure stays an error (no fake transcript)",
+  "ok": true,
+  "detail": "HTTP 503 status=provider_error transcript=None"
+ },
+ {
+  "step": "TTS bulbul:v4-flash hi-IN",
+  "ok": true,
+  "detail": "bytes=292868 rip=b'RIFF' provider=sarvam_tts"
+ },
+ {
+  "step": "TTS bulbul:v4-flash en-IN",
+  "ok": true,
+  "detail": "bytes=197612 rip=b'RIFF' provider=sarvam_tts"
+ },
+ {
+  "step": "TTS bulbul:v4-flash pa-IN",
+  "ok": true,
+  "detail": "bytes=194084 rip=b'RIFF' provider=sarvam_tts"
+ },
+ {
+  "step": "persona Small Farmer live",
+  "ok": true,
+  "detail": "flows=3 cash=18000 cats=['business_stock_cost', 'household_essential', 'debt_repayment'] min_balance=[-9500, -9500] expl_source=sarvam_llm len=898"
+ },
+ {
+  "step": "persona Kiryana Shop Owner live",
+  "ok": true,
+  "detail": "flows=4 cash=42000 cats=['business_sales', 'business_stock_cost', 'household_essential', 'debt_repayment'] min_balance=[44500, 26300] expl_source=sarvam_llm len=833"
+ },
+ {
+  "step": "persona Street Food Vendor live",
+  "ok": true,
+  "detail": "flows=5 cash=9500 cats=['business_sales', 'business_stock_cost', 'business_operating_cost', 'household_essential', 'other'] min_balance=[9860, -2940] expl_source=sarvam_llm len=1016"
+ },
+ {
+  "step": "personas produce DIFFERENT twins+simulations",
+  "ok": true,
+  "detail": "fingerprints={'Small Farmer': (18000, 3, (-9500, -9500)), 'Kiryana Shop Owner': (42000, 4, (44500, 26300)), 'Street Food Vendor': (9500, 5, (9860, -2940))}"
+ },
+ {
+  "step": "personas produce DIFFERENT recommendations",
+  "ok": true,
+  "detail": "distinct=3 of 3"
+ },
+ {
+  "step": "BHASHINI translate (real or honest error)",
+  "ok": true,
+  "detail": "HTTP 200 provider=offline_fallback status=unavailable translated=False msg=Translation is unavailable; the original text is shown."
+ },
+ {
+  "step": "BHASHINI live inference",
+  "ok": false,
+  "detail": "provider=offline_fallback status=unavailable (see _bhashini_probe.py for the HTTP evidence)"
+ }
+]

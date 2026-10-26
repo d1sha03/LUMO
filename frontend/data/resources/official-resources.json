@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "id": "pm_svanidhi",
+      "title": "PM Street Vendor's AtmaNirbhar Nidhi (PM SVANidhi)",
+      "why_relevant": "Provides working-capital loans starting at ₹10,000 (with subsequent tranches of ₹20,000 and ₹50,000) and a 7% interest subsidy on timely repayment for urban street vendors, which may help replace high-cost informal supplier credit.",
+      "eligibility_summary": "Available to street vendors engaged in vending in urban areas with a Certificate of Vending / Identity Card or a Letter of Recommendation (LoR) from the Urban Local Body (ULB) or Town Vending Committee (TVC). Final eligibility depends on municipal records and lender verification.",
+      "requirements_to_verify": [
+        "Aadhaar card linked with an active mobile number",
+        "Certificate of Vending / ID card issued by ULB, or Letter of Recommendation",
+        "Active Aadhaar-seeded bank account"
+      ],
+      "official_url": "https://pmsvanidhi.mohua.gov.in/",
+      "source_checked_at": "2026-10-22",
+      "disclaimer": "Eligibility and approval must be verified with the official provider and participating lending institution."
+    },
+    {
+      "id": "pm_mudra_yojana",
+      "title": "Pradhan Mantri MUDRA Yojana (PMMY)",
+      "why_relevant": "PMMY loans are offered through banks, NBFCs and MFIs to eligible non-corporate, non-farm micro enterprises. The Shishu category covers loans up to ₹50,000; Kishor covers amounts above ₹50,000 up to ₹5,00,000.",
+      "eligibility_summary": "Micro-enterprise needs may be considered for income-generating manufacturing, trading, service and allied activities. A lender assesses the application and decides terms; MUDRA itself does not lend directly to the individual.",
+      "requirements_to_verify": [
+        "Identity and address proof (Aadhaar / Voter ID / PAN)",
+        "Business details or activity proof requested by the chosen lender",
+        "Quotation for equipment or working-capital estimate",
+        "Last 6 months bank statement if available"
+      ],
+      "official_url": "https://www.mudra.org.in/",
+      "source_checked_at": "2026-10-22",
+      "disclaimer": "Eligibility and approval must be verified with the official provider and lending bank/NBFC-MFI."
+    },
+    {
+      "id": "eshram_portal",
+      "title": "e-Shram — National Database of Unorganised Workers",
+      "why_relevant": "Provides a universal UAN card for unorganised workers (including street vendors and small traders) and links to social-security and accidental insurance benefits.",
+      "eligibility_summary": "The Ministry of Labour & Employment describes e-Shram as registration for unorganised workers aged 16 and above. Check the live portal for current eligibility and registration rules.",
+      "requirements_to_verify": [
+        "Aadhaar number",
+        "Aadhaar-linked active mobile number",
+        "Any further bank details requested by the live registration flow"
+      ],
+      "official_url": "https://eshram.gov.in/",
+      "source_checked_at": "2026-10-22",
+      "disclaimer": "Eligibility and approval must be verified with the official provider (Ministry of Labour & Employment)."
+    },
+    {
+      "id": "pm_jan_dhan",
+      "title": "Pradhan Mantri Jan Dhan Yojana (PMJDY)",
+      "why_relevant": "Offers access to a basic savings bank account and financial services. RuPay card cover and any overdraft depend on the current scheme terms, account conditions and participating bank verification.",
+      "eligibility_summary": "Visit the official portal or a participating bank to check current account-opening and overdraft terms. A bank verifies KYC and account status.",
+      "requirements_to_verify": [
+        "Aadhaar card or officially valid KYC document",
+        "Passport-size photograph"
+      ],
+      "official_url": "https://pmjdy.gov.in/",
+      "source_checked_at": "2026-10-22",
+      "disclaimer": "Eligibility and approval must be verified with the official provider and participating bank branch."
+    },
+    {
+      "id": "jan_suraksha_bima",
+      "title": "PM Suraksha Bima Yojana (PMSBY) & PM Jeevan Jyoti Bima Yojana (PMJJBY)",
+      "why_relevant": "Low-premium accident insurance (₹20/year for ₹2,00,000 accidental death/disability cover under PMSBY) and life insurance (₹436/year for ₹2,00,000 cover under PMJJBY) to protect household reserves against sudden shocks.",
+      "eligibility_summary": "Savings bank or post-office account holders aged 18–70 years (PMSBY) or 18–50 years (PMJJBY) who give auto-debit consent before the annual renewal cycle.",
+      "requirements_to_verify": [
+        "Active savings bank or post-office account",
+        "Aadhaar linked to bank account",
+        "Signed auto-debit consent form with nominee details"
+      ],
+      "official_url": "https://jansuraksha.gov.in/",
+      "source_checked_at": "2026-10-22",
+      "disclaimer": "Eligibility and approval must be verified with the official provider and your bank or post office."
+    }
+  ]
+}

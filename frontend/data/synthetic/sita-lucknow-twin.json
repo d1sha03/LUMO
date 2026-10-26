@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "twin_id": "twin_sita_veg_vendor_lucknow_demo",
+  "as_of_date": "2026-10-19",
+  "language": "hi-IN",
+  "profile": {
+    "occupation": "street_vendor",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  "cash_on_hand": 8100,
+  "minimum_reserve": 2100,
+  "forecast_days": 30,
+  "cash_flows": [
+    {
+      "id": "sita_daily_sales",
+      "label": "Vegetable cart gross sales",
+      "direction": "inflow",
+      "category": "business_sales",
+      "amount": 1500,
+      "frequency": "daily",
+      "start_date": "2026-10-19",
+      "confidence": 0.88,
+      "source_type": "synthetic_dataset",
+      "source_note": "Sita says daily sales vary; ₹1,500/day is an illustrative demo baseline.",
+      "essential": true
+    },
+    {
+      "id": "sita_daily_stock",
+      "label": "Mandi vegetable stock",
+      "direction": "outflow",
+      "category": "business_stock_cost",
+      "amount": 900,
+      "frequency": "daily",
+      "start_date": "2026-10-19",
+      "confidence": 0.86,
+      "source_type": "synthetic_dataset",
+      "source_note": "Illustrative demo amount; confirm with Sita before using outside the demo.",
+      "essential": true
+    },
+    {
+      "id": "sita_cart_ops",
+      "label": "Cart fee, ice and carrying costs",
+      "direction": "outflow",
+      "category": "business_operating_cost",
+      "amount": 120,
+      "frequency": "daily",
+      "start_date": "2026-10-19",
+      "confidence": 0.8,
+      "source_type": "synthetic_dataset",
+      "source_note": "Illustrative demo operating cost.",
+      "essential": true
+    },
+    {
+      "id": "sita_household_food",
+      "label": "Essential household groceries",
+      "direction": "outflow",
+      "category": "household_essential",
+      "amount": 280,
+      "frequency": "daily",
+      "start_date": "2026-10-19",
+      "confidence": 0.82,
+      "source_type": "synthetic_dataset",
+      "source_note": "Illustrative demo household amount.",
+      "essential": true
+    },
+    {
+      "id": "sita_inventory_due",
+      "label": "Mandi supplier settlement",
+      "direction": "outflow",
+      "category": "supplier_payment",
+      "amount": 1200,
+      "frequency": "once",
+      "start_date": "2026-10-24",
+      "confidence": 0.9,
+      "source_type": "synthetic_dataset",
+      "source_note": "Fictional demo obligation: ₹1,200 inventory payment due in five days.",
+      "essential": true
+    },
+    {
+      "id": "sita_loan_instalment",
+      "label": "Loan instalment — schedule to confirm",
+      "direction": "outflow",
+      "category": "debt_repayment",
+      "amount": 1800,
+      "frequency": "once",
+      "start_date": "2026-10-25",
+      "confidence": 0.62,
+      "source_type": "synthetic_dataset",
+      "source_note": "Demo-only illustrative payment after Sita reports borrowing ₹10,000 last month. Actual lender, due date and instalment were not supplied.",
+      "essential": true
+    },
+    {
+      "id": "sita_school_fee",
+      "label": "Daughter's school fee",
+      "direction": "outflow",
+      "category": "household_essential",
+      "amount": 2500,
+      "frequency": "once",
+      "start_date": "2026-11-10",
+      "confidence": 0.86,
+      "source_type": "synthetic_dataset",
+      "source_note": "Fictional demo obligation: school fee due later next month.",
+      "essential": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "sita_sewing_machine_goal",
+      "label": "Sewing machine for a home tailoring sideline",
+      "target_amount": 25000,
+      "target_date": "2027-04-19",
+      "priority": "important",
+      "current_saved": 0
+    }
+  ]
+}
